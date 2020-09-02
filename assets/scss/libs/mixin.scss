@@ -1,0 +1,63 @@
+@mixin headlineMobh1 {
+  font-size: $headlineMobh1;
+  font-weight: 400;
+  font-family: 'Montserrat-Black';
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@mixin headlineDesch1 {
+  font-size: $headlineDesch1;
+}
+@mixin headlineDescMaxh1 {
+  font-size: $headlineDescMaxh1;
+}
+@mixin headlineMobh2 {
+  font-size: $headlineMobh2;
+  font-family: 'Montserrat-Black';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@mixin headlineDesch2 {
+  font-size: $headlineDesch2;
+}
+@mixin headlineDescMaxh2 {
+  font-size: $headlineDescMaxh2;
+}
+@mixin headlineMobh3 {
+    font-size: $headlineMobh3;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+@mixin headlineDesch3 {
+    font-size: $headlineDesch3;
+}
+@mixin headlineDescMaxh3 {
+    font-size: $headlineDescMaxh3;
+}
+@mixin headlineMobh4 {
+    font-size: $headlineMobh4;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 30px;
+    font-family: $fontBlack;
+}
+@mixin headlineDesch4 {
+    font-size: $headlineDesch4;
+}
+@mixin headlineDescMaxh4 {
+    font-size: $headlineDescMaxh4;
+}
+@mixin parMob {
+    font-size: $parMob;
+    font-weight: 300;
+    color: #5d6989;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+@mixin parDesc {
+    font-size: $parDesc;
+}

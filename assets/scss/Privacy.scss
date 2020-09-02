@@ -1,0 +1,13 @@
+@import "libs/variables";
+@import "libs/mixin";
+@import "libs/keyframes";
+
+section{
+  .all-FAQ{
+    .right-part{
+      .FAQ_nav{
+        display: none;
+      }
+    }
+  }
+}
