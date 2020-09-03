@@ -25,14 +25,7 @@ $(document).ready(function(){
   $( "main" ).click(function(event) {
     $('.all-hidd').slideUp();
   });
-
-  $('.navigation-without-full').find('a').click(function(){
-    var $href = $(this).attr('href');
-    var $anchor = $('#'+$href).offset();
-    window.scrollTo($anchor.left,$anchor.top);
-    return false;
-  });
-  
+ 
   $( ".open-log" ).click(function(event) {
     $('.pop-up').removeClass('open-pop');
     $('.burg-menu').removeClass('open-nav');

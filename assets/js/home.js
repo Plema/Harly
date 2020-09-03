@@ -48,18 +48,16 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
+  $( "#navigation-without-full > li > a" ).click(function(event) {
+    $('#navigation-without-full > li').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+
   $( ".numb-pag" ).click(function(event) {
     $('.numb-pag').removeClass('active');
     $(this).addClass('active');
   });
 
-
-  if($(window).width() >= '1024' && $(window).width()<='1399') {
-    $( "#navigation-without-full > li" ).click(function(event) {
-      $('#navigation-without-full > li').removeClass('active');
-      $(this).addClass('active');
-    });
-  }
 
   var height1 = $(window).height(); 
   var width1 = $(window).width();
@@ -135,24 +133,28 @@ $(document).ready(function(){
     });
 
     
-  var navSection = '#navigation-without-full';
+  // var navSection = '#navigation-without-full';
 
-  function onScroll(){
-  $(navSection + ' a').each(function(){
-      var anchor      = $(this).attr('href').replace('index.html','');
-      console.log(anchor)
-      var scrollTop   = $(document).scrollTop();
-      var positionTop = $(anchor).offset().top;
-      var outerHeight = $(anchor).outerHeight();
+  // function onScroll(){
+  // $(navSection + ' a').each(function(){
+  //     var anchor      = $(this).attr('href').replace('index.html','');
+  //     console.log(anchor)
+  //     var scrollTop   = $(document).scrollTop();
+  //     var positionTop = $(anchor).offset().top;
+  //     var outerHeight = $(anchor).outerHeight();
 
-      if ((positionTop-$(window).height()/2 <= scrollTop) && (positionTop + outerHeight > scrollTop)) {
-        $(navSection + 'li.active').removeClass('active');
-        $($(this).parent()).addClass('active');
-      } else {
-        $($(this).parent()).removeClass('active');
-      }
-    });
-  }
+  //     if ((positionTop-$(window).height()/2 <= scrollTop) && (positionTop + outerHeight > scrollTop)) {
+  //       console.log(anchor)
+  //       console.log(scrollTop)
+  //       console.log(positionTop)
+  //       console.log(outerHeight)
+  //       $(navSection + 'li.active').removeClass('active');
+  //       $($(this).parent()).addClass('active');
+  //     } else {
+  //       $($(this).parent()).removeClass('active');
+  //     }
+  //   });
+  // }
 
-  $(document).on('scroll', onScroll);
+  // $(document).on('scroll', onScroll);
 });
