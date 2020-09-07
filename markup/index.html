@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/slick.css" data-inprogress="">
   <link rel="stylesheet" href="css/fullpage.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/FAQ.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
 </head>
 
@@ -77,14 +78,14 @@
   
   <ul class="navigation-without-full">
     <div id="navigation-without-full">
-      <li class="active" data-menuanchor="Home"><a href="index.html#top-banner">Home</a></li>
-      <li data-menuanchor="About_Us"><a href="index.html#about">About</a></li>
-      <li data-menuanchor="Plans_And_Priciing"><a href="index.html#plan">Plans & pricing</a></li>
-      <li data-menuanchor="Affilates"><a href="index.html#aff">Affilatiates</a></li>
-      <li data-menuanchor="News"><a href="index.html#new">News</a></li>
-      <li data-menuanchor="Contact_Us"><a href="index.html#contact">Contact us</a></li>
+      <li class="active"><a href="index.html#top-banner">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#plan">Plans & pricing</a></li>
+      <li><a href="index.html#aff">Affilatiates</a></li>
+      <li><a href="index.html#new">News</a></li>
+      <li class="men-faq"><a href="index.html#FAQ">FAQ</a></li>
+      <li><a href="index.html#contact">Contact us</a></li>
     </div>
-    <li class="men-faq"><a href="FAQ.html">FAQ</a></li>
   </ul>
 
   <ul id="navigation">
@@ -93,20 +94,19 @@
     <li data-menuanchor="Plans_And_Priciing"><a href="index.html#Plans_And_Priciing">Plans & pricing</a></li>
     <li data-menuanchor="Affilates"><a href="index.html#Affilates">Affilatiates</a></li>
     <li data-menuanchor="News"><a href="index.html#News">News</a></li>
+    <li class="men-faq" data-menuanchor="FAQ-anch"><a href="FAQ.html">FAQ</a></li>
     <li data-menuanchor="Contact_Us"><a href="index.html#Contact_Us">Contact us</a></li>
-    <li class="men-faq"><a href="FAQ.html">FAQ</a></li>
   </ul>
   <div class="links">
     <p><a href="Terms-Conditions.html">Terms and Conditions</a></p>
     <p><a href="Privacy-Policy.html">Privacy Policy</a></p>
-    <!-- <p><a href="">Cookie Policy</a></p> -->
   </div>
+</div>
   <div class="social">
-    <p><a href=""><i class="icon-facebook"></i></a></p>
-    <p><a href=""><i class="icon-youtube"></i></a></p>
-    <p><a href=""><i class="icon-telegram"></i></a></p>
-    <p><a href=""><i class="icon-twitter"></i></a></p>
-  </div>
+  <p><a href=""><i class="icon-facebook"></i></a></p>
+  <p><a href=""><i class="icon-youtube"></i></a></p>
+  <p><a href=""><i class="icon-telegram"></i></a></p>
+  <p><a href=""><i class="icon-twitter"></i></a></p>
 </div>
   <h6 class="right-fixed">© 2020 MiaConnect. All rights reserved</h6>
   <div class="fullpage-wrapper" id="fullpage">
@@ -118,7 +118,7 @@
             <img src="img/MIA.gif" alt="">
             <div class="some-text">
               <p><span>SCROLL DOWN</span> <strong>TO LEARN MORE</strong></p>
-              <div class="line-top"></div>
+              <div class="line-top"><span></span></div>
             </div>
           </div>
           <div class="text-block">
@@ -283,7 +283,7 @@
               </h5>
               <label>Amount of investment</label>
               <div class="inp">
-                <input type="text" class="calc-inp" value="1000">
+                <input type="number" class="calc-inp only-number" value="1000" pattern="^[0-9]+$">
                 <span>USD</span>
               </div>
               <div class="calc-result">
@@ -304,7 +304,7 @@
                     <p>$ 11 880.00</p>
                   </div>
                 </div>
-                <button class="red-button-invest">Invest now</button>
+                <button class="red-button-head">Invest now</button>
               </div>
             </div>
           </div>
@@ -379,28 +379,28 @@
             <div class="left-info">
               <h3>How to get the affiliate bonuses?</h3>
               <div class="one-left-list">
-                <img src="img/sing_up.png" alt="">
+                <img src="img/sing_up.svg" alt="">
                 <div class="text">
                   <h6 class="link-news">Sign up</h6>
                   <p>Register, it will take less than a minute.</p>
                 </div>
               </div>
               <div class="one-left-list">
-                <img src="img/linc.png" alt="">
+                <img src="img/linc.svg" alt="">
                 <div class="text">
                   <h6 class="link-news">Affiliate link</h6>
                   <p>You automatically receive a referral link, which can be found in your account.</p>
                 </div>
               </div>
               <div class="one-left-list">
-                <img src="img/person.png" alt="">
+                <img src="img/person.svg" alt="">
                 <div class="text">
                   <h6 class="link-news">Add friends</h6>
                   <p>Invite friends through your referral link and receive income from their deposits.</p>
                 </div>
               </div>
               <div class="one-left-list">
-                <img src="img/money.png" alt="">
+                <img src="img/money.svg" alt="">
                 <div class="text">
                   <h6 class="link-news">Get 7% profit</h6>
                   <p>You get a bonus of 7% from each deposit of invited friends, and from deposits of their friends (3%, 2%)</p>
@@ -550,47 +550,47 @@
           </div>
           <div class="block-news">
             <div class="one-news">
-              <img src="img/newsImg1.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg1.png" alt="News"></a>
               <a href="main-news.html" class="link-news">The IRS Investigation Division Is Requesting Information About Privacy-Centric</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg2.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg2.png" alt="News"></a>
               <a href="main-news.html" class="link-news">'Running Drivenet:' Bitcoin Proponent Discusses the Benefits of Drivechain Versus Lightning Network</a>
               <p>Jan 30, 2020  |  Trading reports</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg3.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg3.png" alt="News"></a>
               <a href="main-news.html" class="link-news">Bitcoin Investors Pocketed 42% in Gains During the Second Quarter of 2020</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg4.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg4.png" alt="News"></a>
               <a href="main-news.html" class="link-news">'Sophisticated' Hacker Plunders $450,000 From Defi Protocol Balancer</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg5.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg5.png" alt="News"></a>
               <a href="main-news.html" class="link-news">Bitcoin Miner Hut 8 to Add 275 PH/s of Mining Capacity With $8.3M Capital Raise</a>
               <p>Jan 30, 2020  |  Trading reports</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg6.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg6.png" alt="News"></a>
               <a href="main-news.html" class="link-news">Bitcoin's 5% Drop in Value Puts Pressure on BTC Mining Operations and Older ASIC Rigs</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg1.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg1.png" alt="News"></a>
               <a href="main-news.html" class="link-news">The IRS Investigation Division Is Requesting Information About Privacy-Centric</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg2.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg2.png" alt="News"></a>
               <a href="main-news.html" class="link-news">'Running Drivenet:' Bitcoin Proponent Discusses the Benefits of Drivechain Versus Lightning Network</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
             <div class="one-news">
-              <img src="img/newsImg3.png" alt="News">
+              <a href="main-news.html" class="a-img"><img src="img/newsImg3.png" alt="News"></a>
               <a href="main-news.html" class="link-news">Bitcoin Investors Pocketed 42% in Gains During the Second Quarter of 2020</a>
               <p>Jan 30, 2020  |  News</p>
             </div>
@@ -625,9 +625,296 @@
       </div>
     </section>
 
+    <section id="FAQ" class="section fp-section fp-auto-height" data-anchor="FAQ-anch">
+      <div class="container">
+        <div class="all-FAQ">
+          <div class="left-info">
+            <h2>Help center</h2>
+            <p class="line">Need help with registration, configuring or using Miaconnect? We’d love to help.</p>
+            <p>Didn't find your question?</p>
+            <div>
+              <p>Email:</p>
+              <a href="mailto:'Miaconnect@gmail.com'">Miaconnect@gmail.com</a>
+            </div>
+            <div>
+              <p>Telegram:</p>
+              <a href="">@MIA_telegram_chat</a>
+            </div>
+            <p>Collaboration begins with a conversation! Email us and find out how we can help you achieve your goals.</p>
+            <a href="index.html#contact" class="red-button-head">Contact us</a>
+            <img src="img/artFaq.png" alt="">
+          </div>
+          <div class="right-part">
+            <div class="FAQ_nav">
+              <p class="active gen-nav">General</p>
+              <p class="acc-nav">Account</p>
+              <p class="fin-nav">Finance</p>
+              <p class="com-nav">Command</p>
+              <p class="sec-nav">Security</p>
+            </div>
+            <div class="all-blocks">
+              <div class="general block">
+                <h3>General help</h3>
+                <div class="one-quest open">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>My friend also wants to participate! May I invite him?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>When can I withdraw my funds?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>I want to contribute to cryptocurrency, but I don't know which wallet to choose?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Is the deposit amount converted to dollars or USDT?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>If I invest $ 1000, how much will I earn in 100 days?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="account block">
+                <h3>Account help</h3>
+                <div class="one-quest open">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>My friend also wants to participate! May I invite him?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>When can I withdraw my funds?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>I want to contribute to cryptocurrency, but I don't know which wallet to choose?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Is the deposit amount converted to dollars or USDT?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>If I invest $ 1000, how much will I earn in 100 days?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="finance block">
+                <h3>Finance help</h3>
+                <div class="one-quest open">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="command block">
+                <h3>Command help</h3>
+                <div class="one-quest open">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="seciruty block">
+                <h3>Security help</h3>
+                <div class="one-quest open">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+                <div class="one-quest">
+                  <div class="title-quest">
+                    <img src="img/arr-lang.png" alt="">
+                    <h5>Morbi ornare nec metus et finibus?</h5>
+                  </div>
+                  <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span>deserunt mollit</span> anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="section fp-section" data-anchor="Contact_Us" id="contact">
       <div class="container">
         <div class="all-contact">
+          <div class="button">
+            <span class="animate"></span>
+            <p><strong></strong></p>
+          </div>
           <div class="block-info">
             <h4><span class="redColor">MIA</span> ALPHA BUSINESS SERVICES LTD</h4>
             <p>Company number:<span> 07550863</span></p>
@@ -641,9 +928,9 @@
             <h2>Contact</h2>
               <p>If you did not find the answer to your question, please contact us through our support center. Send us your questions, concerns or feedback.</p>
             <form action="./php" id="form-message" method="POST">
-              <input type="name" name="name" placeholder="Name" id="name">
-              <input type="email" name="email" placeholder="Email" id="email">
-              <textarea name="Message" id="Message" placeholder="Message"></textarea>
+              <input type="name" name="name" placeholder="Name" id="name" class="foc">
+              <input type="email" name="email" placeholder="Email" id="email" class="foc">
+              <textarea name="Message" id="Message" placeholder="Message" class="foc"></textarea>
               <button type="submit" class="red-button-head">Submit</button>
             </form>
           </div>
@@ -660,6 +947,7 @@
 <div class="pop-up registration-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
   </div>
   <div class="title">
     <h6>Already have an account?</h6>
@@ -668,26 +956,28 @@
   <div class="content">
     <h3>Registration</h3>
     <form action="" autocomplete="off">
-      <div class="div-inp">
-        <img src="img/person1.png" alt="">
+      <div class="div-inp correct">
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required="">
       </div>
-      <div class="div-inp">
-        <img src="img/mail.png" alt="">
+      <div class="div-inp correct">
+        <i class="icon-mail"></i>
         <input type="email" class="inp" placeholder="Email" required="">
+        <p class="cor">This email not used</p>
       </div>
       <div class="div-inp">
-        <img src="img/inviter.png" alt="">
+        <i class="icon-invite"></i>
         <input type="email" class="inp" placeholder="Your inviter email" required="">
         <span>After registration you cannot change inviter.</span>
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required="">
       </div>
-      <div class="div-inp">
-        <img src="img/pass.png" alt="">
+      <div class="div-inp uncorrect">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Retipe password" required="">
+        <p class="uncor">Password does not match!</p>
       </div>
       <div class="check">
         <input type="checkbox" checked="" id="good">
@@ -701,6 +991,8 @@
 <div class="pop-up login-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -710,11 +1002,11 @@
     <h3>Login</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/person1.png" alt="">
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required="">
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required="">
       </div>
       <strong class="open-rec">Forgot password?</strong>
@@ -726,6 +1018,8 @@
 <div class="pop-up rec-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -735,7 +1029,7 @@
     <h3>Password recovery</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/mail.png" alt="">
+        <i class="icon-mail"></i>
         <input type="email" class="inp" placeholder="Email" required="">
       </div>
       <button class="red-button-head">Send password reset link</button>
@@ -751,6 +1045,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
 <script src="js/fullpage.min.js"></script>
+<script src="js/FAQ.min.js"></script>
 <script src="js/script.min.js"></script>
 <script src="js/home.min.js"></script>
 

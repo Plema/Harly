@@ -1,0 +1,32 @@
+.social{
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  p{
+    margin-right: 15px;
+    i{
+      color: #2e3956;
+      transition: 0.5s;
+      &:hover{
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .social{
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    left: 40px;
+    z-index: 150;
+  }
+}
+
+@media (min-width: 1024px) {
+  .social{
+    bottom: 20px;
+  }
+}

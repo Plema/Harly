@@ -20,6 +20,17 @@
     opacity: 0.1;
   }
 }
+@keyframes animateLine {
+  0%{
+    top: 2px;
+  }
+  50%{
+    top: 44px;
+  }
+  100%{
+    top: 2px;
+  }
+}
 
 @media (min-width: 1024px) {
   @keyframes animateButton {
@@ -42,6 +53,20 @@
     100%{
       transform: scale(1.5);
       opacity: 0.08;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes animateLine {
+    0%{
+      top: 2px;
+    }
+    50%{
+      top: 60px;
+    }
+    100%{
+      top: 2px;
     }
   }
 }

@@ -78,14 +78,14 @@
   
   <ul class="navigation-without-full">
     <div id="navigation-without-full">
-      <li class="active" data-menuanchor="Home"><a href="index.html#top-banner">Home</a></li>
-      <li data-menuanchor="About_Us"><a href="index.html#about">About</a></li>
-      <li data-menuanchor="Plans_And_Priciing"><a href="index.html#plan">Plans & pricing</a></li>
-      <li data-menuanchor="Affilates"><a href="index.html#aff">Affilatiates</a></li>
-      <li data-menuanchor="News"><a href="index.html#new">News</a></li>
-      <li data-menuanchor="Contact_Us"><a href="index.html#contact">Contact us</a></li>
+      <li class="active"><a href="index.html#top-banner">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#plan">Plans & pricing</a></li>
+      <li><a href="index.html#aff">Affilatiates</a></li>
+      <li><a href="index.html#new">News</a></li>
+      <li class="men-faq"><a href="index.html#FAQ">FAQ</a></li>
+      <li><a href="index.html#contact">Contact us</a></li>
     </div>
-    <li class="men-faq"><a href="FAQ.html">FAQ</a></li>
   </ul>
 
   <ul id="navigation">
@@ -94,19 +94,12 @@
     <li data-menuanchor="Plans_And_Priciing"><a href="index.html#Plans_And_Priciing">Plans & pricing</a></li>
     <li data-menuanchor="Affilates"><a href="index.html#Affilates">Affilatiates</a></li>
     <li data-menuanchor="News"><a href="index.html#News">News</a></li>
+    <li class="men-faq" data-menuanchor="FAQ-anch"><a href="FAQ.html">FAQ</a></li>
     <li data-menuanchor="Contact_Us"><a href="index.html#Contact_Us">Contact us</a></li>
-    <li class="men-faq"><a href="FAQ.html">FAQ</a></li>
   </ul>
   <div class="links">
     <p><a href="Terms-Conditions.html">Terms and Conditions</a></p>
     <p><a href="Privacy-Policy.html">Privacy Policy</a></p>
-    <!-- <p><a href="">Cookie Policy</a></p> -->
-  </div>
-  <div class="social">
-    <p><a href=""><i class="icon-facebook"></i></a></p>
-    <p><a href=""><i class="icon-youtube"></i></a></p>
-    <p><a href=""><i class="icon-telegram"></i></a></p>
-    <p><a href=""><i class="icon-twitter"></i></a></p>
   </div>
 </div>
   <section id="FAQ">
@@ -239,6 +232,7 @@
 <div class="pop-up registration-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
   </div>
   <div class="title">
     <h6>Already have an account?</h6>
@@ -247,26 +241,28 @@
   <div class="content">
     <h3>Registration</h3>
     <form action="" autocomplete="off">
-      <div class="div-inp">
-        <img src="img/person1.png" alt="">
+      <div class="div-inp correct">
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required="">
       </div>
-      <div class="div-inp">
-        <img src="img/mail.png" alt="">
+      <div class="div-inp correct">
+        <i class="icon-mail"></i>
         <input type="email" class="inp" placeholder="Email" required="">
+        <p class="cor">This email not used</p>
       </div>
       <div class="div-inp">
-        <img src="img/inviter.png" alt="">
+        <i class="icon-invite"></i>
         <input type="email" class="inp" placeholder="Your inviter email" required="">
         <span>After registration you cannot change inviter.</span>
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required="">
       </div>
-      <div class="div-inp">
-        <img src="img/pass.png" alt="">
+      <div class="div-inp uncorrect">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Retipe password" required="">
+        <p class="uncor">Password does not match!</p>
       </div>
       <div class="check">
         <input type="checkbox" checked="" id="good">
@@ -280,6 +276,8 @@
 <div class="pop-up login-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -289,11 +287,11 @@
     <h3>Login</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/person1.png" alt="">
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required="">
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required="">
       </div>
       <strong class="open-rec">Forgot password?</strong>
@@ -305,6 +303,8 @@
 <div class="pop-up rec-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -314,7 +314,7 @@
     <h3>Password recovery</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/mail.png" alt="">
+        <i class="icon-mail"></i>
         <input type="email" class="inp" placeholder="Email" required="">
       </div>
       <button class="red-button-head">Send password reset link</button>

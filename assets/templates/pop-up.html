@@ -3,6 +3,7 @@
 <div class="pop-up registration-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
   </div>
   <div class="title">
     <h6>Already have an account?</h6>
@@ -11,26 +12,28 @@
   <div class="content">
     <h3>Registration</h3>
     <form action=""  autocomplete="off">
-      <div class="div-inp">
-        <img src="img/person1.png" alt="">
+      <div class="div-inp correct" >
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required>
       </div>
-      <div class="div-inp">
-        <img src="img/mail.png" alt="">
-        <input type="email" class="inp" placeholder="Email" required>
+      <div class="div-inp correct">
+        <i class="icon-mail"></i>
+        <input type="email" class="inp" placeholder="Email" required class="email-inp">
+        <p class="cor">This email not used</p>
       </div>
       <div class="div-inp">
-        <img src="img/inviter.png" alt="">
+        <i class="icon-invite"></i>
         <input type="email" class="inp" placeholder="Your inviter email" required>
         <span>After registration you cannot change inviter.</span>
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required>
       </div>
-      <div class="div-inp">
-        <img src="img/pass.png" alt="">
+      <div class="div-inp uncorrect">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Retipe password" required>
+        <p class="uncor">Password does not match!</p>
       </div>
       <div class="check">
         <input type="checkbox" checked id='good'>
@@ -44,6 +47,8 @@
 <div class="pop-up login-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -53,11 +58,11 @@
     <h3>Login</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/person1.png" alt="">
+        <i class="icon-person2"></i>
         <input type="text" class="inp" placeholder="Username" required>
       </div>
       <div class="div-inp">
-        <img src="img/pass.png" alt="">
+        <i class="icon-pass"></i>
         <input type="password" class="inp" placeholder="Password" required>
       </div>
       <strong class="open-rec">Forgot password?</strong>
@@ -69,6 +74,8 @@
 <div class="pop-up rec-pop">
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -78,7 +85,7 @@
     <h3>Password recovery</h3>
     <form action="">
       <div class="div-inp">
-        <img src="img/mail.png" alt="">
+        <i class="icon-mail"></i>
         <input type="email" class="inp" placeholder="Email" required>
       </div>
       <button class="red-button-head">Send password reset link</button>

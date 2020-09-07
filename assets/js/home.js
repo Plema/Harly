@@ -63,10 +63,9 @@ $(document).ready(function(){
   var width1 = $(window).width();
     if(height1 >= '899' && width1>='1399') {
       $('#fullpage').fullpage({
-        anchors : [ 'Home','About_Us','Plans_And_Priciing','Affilates','News', 'Contact_Us'],
+        anchors : [ 'Home','About_Us','Plans_And_Priciing','Affilates','News','FAQ-anch', 'Contact_Us',],
         navigation: true,
         menu:'#navigation',
-        verticalCentered:true,
         scrollOverflow:true,
         scrollingSpeed : 1200 ,
         afterLoad : function(origin, destination, direction){
@@ -75,6 +74,12 @@ $(document).ready(function(){
             $('.pr1').addClass('pr70');
             $('.pr2').addClass('pr30');
             $('.pr3').addClass('pr20');
+          }
+        },
+        afterSlideLoad: function( section, origin, destination, direction){
+          var loadedSlide = this;
+          if(section.anchor == 'Plans_And_Priciing'){
+            alert("First slide loaded");
           }
         }
       });
@@ -117,10 +122,11 @@ $(document).ready(function(){
         var w_height = $(window).height(); // Высота окна браузера
         var d_height = $(document).height(); // Высота всего документа
         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-        if (w_top +700 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+        if (w_top +800 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $('.count-spin').css('opacity', '1');
             $('.count-spin').spincrement({
-                thousandSeparator: "",
+                thousandSeparator: " ",
+                complete: null,
                 duration: 4500
             });
              
@@ -132,29 +138,7 @@ $(document).ready(function(){
         }
     });
 
-    
-  // var navSection = '#navigation-without-full';
-
-  // function onScroll(){
-  // $(navSection + ' a').each(function(){
-  //     var anchor      = $(this).attr('href').replace('index.html','');
-  //     console.log(anchor)
-  //     var scrollTop   = $(document).scrollTop();
-  //     var positionTop = $(anchor).offset().top;
-  //     var outerHeight = $(anchor).outerHeight();
-
-  //     if ((positionTop-$(window).height()/2 <= scrollTop) && (positionTop + outerHeight > scrollTop)) {
-  //       console.log(anchor)
-  //       console.log(scrollTop)
-  //       console.log(positionTop)
-  //       console.log(outerHeight)
-  //       $(navSection + 'li.active').removeClass('active');
-  //       $($(this).parent()).addClass('active');
-  //     } else {
-  //       $($(this).parent()).removeClass('active');
-  //     }
-  //   });
-  // }
-
-  // $(document).on('scroll', onScroll);
+    document.querySelector('.only-number').addEventListener('keyup', function(){
+      this.value = this.value.replace(/[^\d]/g, '');
+    });
 });

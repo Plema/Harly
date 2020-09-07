@@ -2,6 +2,7 @@
 @import "libs/header";
 @import "libs/footer";
 @import "libs/navigation";
+@import "libs/nav-socia";
 @import "libs/fonts";
 @import "libs/fontello";
 @import "libs/normalize";
@@ -47,7 +48,20 @@ html {
     font-family: 'Montserrat';
     font-weight: 400;
     font-style: normal;
-    transition: 5s;
+    transition: 0.5s;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 *:before,
