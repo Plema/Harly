@@ -1591,7 +1591,7 @@ section {
           font-size: $headlineMobh3;
         }
         a{
-          margin-bottom: 40px;
+          margin-bottom: 100px;
         }
         .block-video{
           margin-left: -150px;
@@ -1938,12 +1938,12 @@ section {
   section{
     .all-banner{
       padding-bottom: 10px;
-      padding-top: 20px;
+      padding-top: 0;
       .img{
         max-width: 620px;
         img{
           max-width: 620px;
-          width: 620px;
+          width: 100%;
         }
         .some-text{
           left: 16%;
@@ -1956,7 +1956,7 @@ section {
           margin-left: -105px;
         }
         a{
-          margin-bottom: 55px;
+          margin-bottom: 115px;
         }
         h1{
           font-size:$headlineDescMaxh1;
@@ -1977,7 +1977,11 @@ section {
         }
       }
     }
+    .all-plans{
+      padding-bottom: 150px;
+    }
     .all-about{
+      padding-top: 55px;
       .bottom-block{
         .select2{
           .all-sel2{
@@ -2014,6 +2018,7 @@ section {
       .img{
         .some-text{
           left: 15%;
+          bottom: 20px;
         }
       }
       .text-block{
@@ -2067,6 +2072,7 @@ section {
 @media (min-width: 1900px) { 
   section{
     .all-banner{
+      padding-bottom: 20px;
       .img{
         .some-text{
           left: 13%;

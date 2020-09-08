@@ -4,6 +4,17 @@ header{
   z-index: 150;
   width: 100%;
   background: rgba(4, 0, 15, 0.97);
+  .social{
+    display: flex;
+    justify-content: center;
+    p{
+      a{
+        i{
+          color: #ffffff;
+        }
+      }
+    }
+  }
   .all-head{
     display: flex;
     align-items: center;

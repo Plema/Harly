@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  $(".navigation > li").removeClass('active')
-  $("#navigation-without-full > li").removeClass('active')
-  $(".navigation > .men-faq").addClass('active')
-  $(".navigation-without-full > .men-faq").addClass('active')
-
   $( ".title-quest" ).click(function(event) {
     $(this).parent().toggleClass('open')
   });
