@@ -224,6 +224,8 @@ section {
         }
         .social{
           flex-direction: column;
+          position: relative;
+          left: 0;
           p{
             margin: 0;
             margin-bottom: 15px;
