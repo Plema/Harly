@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MIACONNECT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/front.png">
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/all-personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/account-settings.min.css" data-inprogress="">
+</head>
+
+<body>
+  <!-- Header -->
+<include src="assets/templates/header.html"></include>
+<main class="main">
+  <include src="assets/templates/navigation2.html"></include>
+  <section class="all-settings-sect">
+    <div class="container cont2">
+      <div class="title">
+        <h2>Edit account</h2>
+        <div class="title-div">
+          <ul class="crumbs">
+            <li><a href="main-paersonal-area.html">My Account</a></li>
+            <li><a href="account-settings.html">Settings</a></li>
+          </ul>
+          <div>
+            <p><span>Last visit: </span> <strong> Apr 17,  2020 / 11:44</strong></p>
+            <p><span>IP</span> <strong>37.211.5.198</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="all-settings">
+        <div class="gen-info one-part">
+          <h3>General information</h3>
+          <form class="gen-form" action="">
+            <div class="all-form">
+              <div class="left-part">
+                <div class="input-label">
+                  <label for="name">Username</label>
+                  <div class="inp">
+                    <img src="img/person1.png" alt="">
+                    <input type="text" id="label" value="Alexander Smith">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="email">Email</label>
+                  <div class="inp">
+                    <img src="img/mail.png" alt="">
+                    <input type="email" id="email" value="Alexander_Smith@gmail.com">
+                  </div>
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="input-label hidd-label">
+                  <label for="inviter">Email</label>
+                  <div class="inp">
+                    <img src="img/inviter.png" alt="">
+                    <input type="email" id="inviter" value="Johnny_Doe@gmail.com" readonly>
+                    <img src="img/block.png" alt="" class="block">
+                  </div>
+                  <p>After registration you cannot change referrer.</p>
+                </div>
+              </div>
+            </div>
+            <button class="red-button-head">Save changes</button>
+          </form>
+        </div>
+        <div class="wallet-info one-part">
+          <h3>Wallet settings</h3>
+          <form action="" class="wall-form">
+            <div class="all-form">
+              <div class="left-part">
+                <div class="input-label">
+                  <label for="bitcoin">Bitcoin</label>
+                  <div class="inp">
+                    <img src="img/bitcoin.png" alt="">
+                    <input type="text" id="bitcoin" value="14xiqKfekcgxG987GVxPQJ9MJQBKjK3gpi">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="Ethereum">Ethereum</label>
+                  <div class="inp">
+                    <img src="img/ETHEREUM.png" alt="">
+                    <input type="text" id="Ethereum" placeholder="Your Ethereum address">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="Tether">Tether</label>
+                  <div class="inp">
+                    <img src="img/Tether.png" alt="">
+                    <input type="text" id="Tether" placeholder="Your Tether address">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="Litecoin">Litecoin</label>
+                  <div class="inp">
+                    <img src="img/Litecoin.png" alt="">
+                    <input type="text" id="Litecoin" placeholder="Your Litecoin address">
+                  </div>
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="input-label">
+                  <label for="Payeer">Payeer</label>
+                  <div class="inp">
+                    <img src="img/Payeer.png" alt="">
+                    <input type="text" id="Payeer" placeholder="Your Payeer address">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="Perfect-Money">Perfect Money</label>
+                  <div class="inp">
+                    <img src="img/Perfect_Money.png" alt="">
+                    <input type="text" id="Perfect-Money" placeholder="Your Perfect Money address">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="Ripple">Ripple</label>
+                  <div class="inp">
+                    <img src="img/Ripple.png" alt="">
+                    <input type="text" id="Ripple" placeholder="Your Ripple address">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="red-button-head">Save changes</button>
+          </form>
+        </div>
+        <div class="security-settings one-part">
+          <h3>Security Settings</h3>
+          <form action="" class="">
+            <div class="all-form">
+              <div class="part">
+                <div class="input-label red-inpur">
+                  <label for="Old-Password">Old Password</label>
+                  <div class="inp">
+                    <img src="img/red-pass.png" alt="" class="not-ok">
+                    <img src="img/pass.png" alt="" class="ok">
+                    <input type="password" id="Old-Password" value="youpassword">
+                  </div>
+                  <p>Password does not match!</p>
+                </div>
+                <div class="input-label">
+                  <label for="New-Password">New Password</label>
+                  <div class="inp">
+                    <img src="img/pass.png" alt="">
+                    <input type="password" id="New-Password" value="youpassword">
+                  </div>
+                </div>
+                <div class="input-label">
+                  <label for="New-Password2">Retype new password</label>
+                  <div class="inp">
+                    <img src="img/pass.png" alt="">
+                    <input type="password" id="New-Password2" value="youpassword">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="red-button-head">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<include src="assets/templates/footer.html"></include>
+<include src="assets/templates/pop-up.html"></include>
+
+<!-- Скрипты -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main-personal.min.js"></script>
+
+</body>
+
+</html>

@@ -1,14 +1,14 @@
 .navigation{
   display: none;
   position: fixed;
-  bottom: 10px;
   left: 40px;
   z-index: 150;
+  background: #04000F;
   ul{
     margin-bottom: 50px;
     li{
       width: 180px;
-      height: 40px;
+      height: 35px;
       border: 1px solid #2e3956;
       position: relative;
       margin-bottom: 10px;
@@ -30,7 +30,7 @@
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
-        line-height: 40px;
+        line-height: 35px;
         padding: 0 20px;
         transition: 0.5s;
         position: relative;
@@ -105,14 +105,12 @@
     display: block;
     ul{
       li{
+        height: 40px;
         width: 220px;
+        a{
+          line-height: 40px;
+        }
       }
-    }
-    .navigation-without-full{
-      display: none;
-    }
-    #navigation{
-      display: block;
     }
   }
 }

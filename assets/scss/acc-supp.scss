@@ -1,0 +1,217 @@
+.all-tickets-section{
+  padding-bottom: 100px;
+  .all-tickets{
+    margin-bottom: 40px;
+    .one-ticket{
+      background: transparent;
+      transition: 0.5s;
+      border-bottom: 1px solid #1F1F34;
+      padding: 15px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .div-icon{
+        max-width: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        i{
+          color: #5d6989;
+        }
+        img{
+          max-width: 20px;
+        }
+        .icon-pass{
+          color: #ff3239;
+        }
+      }
+      p{
+        color: #5d6989;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      .topic{
+        margin-right: 10px;
+      }
+      .title-mess{
+        margin-right: 10px;
+      }
+      .date{
+        font-size: 10px;
+        order: 6;
+      }
+      .message{
+        font-size: 12px;
+      }
+      &:hover{
+        background: #1f2034;
+      }
+    }
+    .ticket-title{
+      display: none;
+    }
+    .read{
+      .div-icon{
+        i{
+          filter: drop-shadow(0 0 15px rgba(38, 228, 160, 0.6));
+          color: #26e4a0;
+        }
+      }
+      p{
+        color: #ffffff;
+      }
+    }
+  }
+  .red-button-head{
+    width: 240px;
+    height: 50px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    cursor: pointer;
+    img{
+      margin-right: 35px;
+    }
+    span{
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .all-tickets-section{
+    .all-tickets{
+      .one-ticket{
+        .div-icon{
+          order: 0;
+        }
+        .date{
+          order: 1;
+          margin-right: 15px;
+        }
+        .topic{
+          order: 2;
+        }
+        .title-mess{
+          order: 3;
+        }
+        .message{
+          order: 4;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .all-tickets-section{
+    .all-tickets{
+      .ticket-title{
+        display: flex;
+      }
+      .one-ticket{
+        flex-wrap: nowrap;
+        .date{
+          font-size: 13px;
+          max-width: 100px;
+          width: 100%;
+        }
+        .topic{
+          max-width: 150px;
+          width: 100%;
+        }
+        .title-mess{
+          max-width: 130px;
+          width: 100%;
+        }
+        .message{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .all-tickets-section{
+    .all-tickets{
+      .one-ticket{
+        .date{
+          max-width: 140px;
+          width: 100%;
+          text-align: center;
+        }
+        .topic{
+          max-width: 135px;
+          width: 100%;
+        }
+        .title-mess{
+          max-width: 170px;
+          width: 100%;
+        }
+        .message{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .all-tickets-section{
+    .all-tickets{
+      .one-ticket{
+        .div-icon{
+          margin-right: 25px;
+        }
+        .date{
+          text-align: left;
+          font-size: 14px;
+          margin-right: 25px;
+          max-width: 150px;
+        }
+        .topic{
+          max-width: 140px;
+          width: 100%;
+          font-size: 14px;
+          margin-right: 25px;
+        }
+        .title-mess{
+          max-width: 240px;
+          width: 100%;
+          font-size: 14px;
+          margin-right: 25px;
+        }
+        .message{
+          font-size: 14px;
+        }
+      }
+      .ticket-title{
+        .date{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1800px) {
+  .all-tickets-section{
+    .all-tickets{
+      .one-ticket{
+        .div-icon{
+          margin-right: 30px;
+        }
+        .title-mess{
+          max-width: 270px;
+        }
+      }
+    }
+  }
+}

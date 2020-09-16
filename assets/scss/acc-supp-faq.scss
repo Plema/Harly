@@ -1,0 +1,91 @@
+section{
+  .all-FAQ{
+    .right-part{
+      max-width: 100%;
+      .FAQ_nav{
+        border: 1px solid #ffffff;
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+        p{
+          border: none;
+          margin: 0;
+          padding: 8px 2px;
+          color: #5d6989;
+          &:before{
+            display: none;
+          }
+          &:hover{
+            background: #ffffff;
+            color: #1f1e23;
+          }
+        }
+        .active{
+          color: #1f1e23;
+          background: #ffffff;
+        }
+      }
+      .all-blocks{
+        .block{
+          h3{
+            text-transform: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  section{
+    .all-FAQ{
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  section{
+    .all-FAQ{
+      .right-part{
+        .all-blocks{
+          .block{
+            h3{
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  section{
+    .all-FAQ{
+      .right-part{
+        .FAQ_nav{
+          margin-bottom: 0;
+        }
+        .all-blocks{
+          margin-top: -35px;
+          .block{
+            h3{
+              padding-right: 620px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  section{
+    .all-FAQ{
+      padding-top: 0;
+    }
+  }
+}

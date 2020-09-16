@@ -50,14 +50,14 @@
         </div>
         <nav>
           <div class="right-part">
-            <div class="registration  open-log">
+            <div class="registration  open-log not-personal">
               <img src="img/user.png" alt="">
               <p>Log in</p>
             </div>
-            <span>or</span>
-            <a href="javascript:void(0)" class="red-button-head open-reg">Sign UP</a>
+            <span class=" not-personal">or</span>
+            <a href="javascript:void(0)" class="red-button-head open-reg  not-personal">Sign UP</a>
           </div>
-          <ul class="mob-nav-ul">
+          <ul class="mob-nav-ul not-personal">
             <li><a href="index.html#top-banner">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#plan">Plans & pricing</a></li>
@@ -65,6 +65,16 @@
             <li><a href="index.html#new">News</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
             <li><a href="index.html#contact">Contact us</a></li>
+          </ul>
+          <ul class="personal-nav">
+            <div>
+              <li class="active"><a href="index.html#top">Account</a></li>
+              <li><a href="index.html#about">Invest</a></li>
+              <li><a href="index.html#plan">Finance</a></li>
+              <li><a href="index.html#aff">Withdraw</a></li>
+              <li><a href="index.html#new">Partners</a></li>
+              <li><a href="index.html#FAQ">Transactions</a></li>
+            </div>
           </ul>
           <div class="social">
             <p><a href=""><i class="icon-facebook"></i></a></p>
@@ -82,7 +92,12 @@
   
   <div class="balance-block">
     <div class="show-block">
-      
+      <img src="img/arr5.png" alt="" class="arr-img">
+      <span>My balance:</span>
+      <p>
+        <strong>$ 1 568.33</strong>
+        <span>+$ 33.00</span>
+      </p>
     </div>
   </div>
 
@@ -97,10 +112,71 @@
     </div>
   </ul>
 
+  <article class="latest-news">
+    <h5>Latest news</h5>
+    <div class="one-news">
+      <a href="main-news.html">Bitcoin Investors Pocketed 42% in Gains During the Second Quarter of 2020</a>
+      <span class="data">Jan 30, 2020  |  News</span>
+    </div>
+    <div class="one-news">
+      <a href="main-news.html">Bitcoin Investors Pocketed 42% in Gains During the Second Quarter of 2020 </a>
+      <span class="data">Jan 30, 2020  |  News</span>
+    </div>
+    <div class="one-news">
+      <a href="main-news.html">Bitcoin Investors Pocketed 42% in Gains During the Second Quarter of 2020 </a>
+      <span class="data">Jan 30, 2020  |  News</span>
+    </div>
+    <a href="index.html#news" class="but-link">All news</a>
+  </article>
 </div>
-  <section>
-    <div class="container">
-
+  <section class="all-errors">
+    <div class="container cont2">
+      <div class="title">
+        <h2>Errors</h2>
+        <div class="title-div">
+          <ul class="crumbs">
+            <li><a href="main-paersonal-area.html">My Account</a></li>
+          </ul>
+          <div>
+            <p><span>Last visit: </span> <strong> Apr 17,  2020 / 11:44</strong></p>
+            <p><span>IP</span> <strong>37.211.5.198</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="all-div-errors">
+        <div class="one-error green">
+          <img src="img/error1.png" alt="">
+          <p>Successful message. consectetur adipiscing elit. Suspendisse tincidunt convallis massa sit amet convallis. Nam a mauris ornare, condimentum leo id, auctor diam.</p>
+          <div class="close-error">
+            <img src="img/close-norm.png" alt="" class="norm">
+            <img src="img/close-hov2.png" alt="" class="hov">
+          </div>
+        </div>
+        <div class="one-error blue">
+          <img src="img/error2.png" alt="">
+          <p>Info message. consectetur adipiscing elit. Suspendisse tincidunt convallis massa sit amet convallis. Nam a mauris ornare, condimentum leo id, auctor diam. Nam varius dui mauris, et blandit urna egestas semper. Aenean condimentum dapibus placerat. Sed quis nunc sit amet ex aliquet pulvinar id at augue. Morbi dignissim mattis nisi et finibus. Aliquam quis nulla nibh. Ut vulputate, urna non tincidunt molestie, dui est congue diam, vel dictum eros lectus quis massa. Vivamus elementum risus in sapien varius lobortis.</p>
+          <div class="close-error">
+            <img src="img/close-norm.png" alt="" class="norm">
+            <img src="img/close-hov2.png" alt="" class="hov">
+          </div>
+        </div>
+        <div class="one-error yellow">
+          <img src="img/error3.png" alt="">
+          <p>Warning message. consectetur adipiscing elit. Suspendisse tincidunt convallis massa sit amet convallis. Nam a mauris ornare, condimentum leo id, auctor diam.</p>
+          <div class="close-error">
+            <img src="img/close-norm.png" alt="" class="norm">
+            <img src="img/close-hov2.png" alt="" class="hov">
+          </div>
+        </div>
+        <div class="one-error red">
+          <img src="img/error4.png" alt="">
+          <p>Error message. consectetur adipiscing elit. Suspendisse tincidunt convallis massa sit amet convallis. Nam a mauris ornare, condimentum leo id, auctor diam.</p>
+          <div class="close-error">
+            <img src="img/close-norm.png" alt="" class="norm">
+            <img src="img/close-hov2.png" alt="" class="hov">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -215,9 +291,9 @@
 
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/map.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/script.min.js"></script>
+<script src="js/main-personal.min.js"></script>
+<script src="js/errors.min.js"></script>
 
 </body>
 

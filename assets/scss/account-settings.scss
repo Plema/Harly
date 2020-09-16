@@ -1,0 +1,205 @@
+.all-settings-sect{
+  .all-settings{
+    h3{
+      text-transform: none;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .input-label{
+      margin-bottom: 30px;
+      max-width: 540px;
+      width: 100%;
+      label{
+        color: #5d6989;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+      .inp{
+        position: relative;
+        input{
+          max-width: 540px;
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          border: 1px solid #5d6989;
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 300;  
+          background: none;
+          padding-left: 40px;
+          padding-right: 20px;  
+          transition: 0.5s;
+          &:focus{
+            border-color: #ffffff;
+          }        
+        }
+        img{
+          position: absolute;
+          top: 0;
+          left: 10px;
+          bottom: 0;
+          margin: auto;
+        }
+        .block{
+          left: auto;
+          right: 10px;
+        }
+      }
+      p{
+        margin-top: 10px;
+        font-size: 13px;
+      }
+    }
+    .hidd-label{
+      label{
+        display: none;
+      }
+    }
+    .red-button-head{
+      width: auto;
+      max-width: 100%;
+      padding: 16px 45px;
+      height: auto;
+      line-height: 100%;
+    }
+    .one-part{
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ffffff;
+      margin-bottom: 40px;
+    }
+    .wallet-info{
+      .input-label{
+        .inp{
+          input{
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+    .security-settings{
+      .input-label{
+        .inp{
+          input{
+            padding-left: 40px;
+          }
+          .not-ok{
+            display: none;
+          }
+        }
+        p{
+          text-align: right;
+        }
+      }
+      .red-inpur{
+        margin-bottom: 20px;
+        .inp{
+          .not-ok{
+            display: block;
+          }
+          .ok{
+            display: none;
+          }
+          input{
+            box-shadow: 0 0 8px rgba(255, 50, 57, 0.2);
+            border: 1px solid #ff3239;
+            color: #ff2139;
+          }
+        }
+        p{
+          color: #ff2139;
+        }
+      }
+    }
+    .security-settings{
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .all-settings-sect{
+    .all-settings{
+      .one-part{
+        padding-bottom: 50px;
+        form{
+          .all-form{
+            display: flex;
+            align-items: flex-start;
+            .left-part{
+              max-width: 49%;
+              width: 100%;
+              margin-right: 25px;
+            }
+            .right-part{
+              max-width: 49%;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .hidd-label{
+        label{
+          opacity: 0;
+          display: block;
+        }
+      }
+      .input-label{
+        margin-bottom: 40px;
+      }
+      .security-settings{
+        form{
+          .all-form{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px)  {
+  .all-settings-sect{
+    .all-settings{
+      .one-part{
+        h3{
+          font-size: 24px;
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .all-settings-sect{
+    .all-settings{
+      form{
+        .all-form{
+          .left-part{
+            max-width: 540px;
+            margin-right: 100px;
+          }
+          .right-part{
+            max-width: 540px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .all-settings-sect{
+    .all-settings{
+      form{
+        .all-form{
+          .left-part{
+            margin-right: 150px;
+          }
+        }
+      }
+    }
+  }
+}

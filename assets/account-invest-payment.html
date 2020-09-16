@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/front.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/all-personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/invest-payment.min.css" data-inprogress="">
+</head>
+<body>
+  <include src="assets/templates/header.html"></include>
+  <main>
+    <include src="assets/templates/navigation2.html"></include>
+    <section>
+      <div class="container cont2">
+        <div class="title">
+          <h2>Create deposit</h2>
+          <div class="title-div">
+            <ul class="crumbs">
+              <li><a href="main-paersonal-area.html">My Account</a></li>
+              <li><a href="#">Invest</a></li>
+              <li><a href="account-invest-payment.html">Waiting for payment </a></li>
+            </ul>
+            <div>
+              <p><span>Last visit: </span> <strong> Apr 17,  2020 / 11:44</strong></p>
+              <p><span>IP</span> <strong>37.211.5.198</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="all-info-invest">
+          <div class="title-bitcoin">
+            <img src="img/bitcoin.png" alt="">
+            <h4>Bitcoin transaction information</h4>
+          </div>
+          <div class="two-part">
+            <div class="left-part">
+              <p>Amount:<strong> 0.01400 BTC</strong></p>
+              <p>To finish funding operation you have to make transaction to 
+              specified address</p>
+              <div>
+                <p id='code-copy'>1C1B1du8YvMwPxwmxE9MiTrwEcrS8un2pr</p>
+                <img src="img/copy.png" alt="" id="copy">
+              </div>
+              <p>Or scan the QR code</p>
+              <p class="big-marg">Order Status:<strong> Pending Payment</strong></p>
+              <p>an application generate deposit address for transaction that must be used for funding within <strong>1 hour</strong>. Otherwise, transaction will be automatically canceled. Bitcoin transactions will be credited <span>after 3 confimations.</span></p>
+            </div>
+            <div class="qr-code">
+              <img src="img/qr.jpg" alt="">
+            </div>
+          </div>
+          <a href="#" class="go-back">
+            <img src="img/arr6.png" alt="">
+            <span>Go back</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<include src="assets/templates/pop-up.html"></include>
+<include src="assets/templates/footer.html"></include>
+
+<!-- Скрипты -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/map.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/acc-invest-pay.min.js"></script>
+</html>
