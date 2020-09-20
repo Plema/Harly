@@ -169,6 +169,9 @@ section{
             color: #5d6989;
             font-size: 12px;
             font-weight: 300;
+            &:hover{
+              color: #ffffff;
+            }
           }
           &:last-of-type{
             a{
