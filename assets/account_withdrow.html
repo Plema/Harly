@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIACONNECT</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/front.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/all-personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/withdraw.min.css" data-inprogress="">
+</head>
+<body>
+  <include src="assets/templates/header.html"></include>
+  <main>
+    <include src="assets/templates/navigation2.html"></include>
+    <section>
+      <div class="container cont2">
+        <div class="title">
+          <h2>Withdraw</h2>
+          <div class="title-div">
+            <ul class="crumbs">
+              <li><a href="main-paersonal-area.html">My Account</a></li>
+              <li><a href="account-invest-payment.html">Withdraw </a></li>
+            </ul>
+            <div>
+              <p><span>Last visit: </span> <strong> Apr 17,  2020 / 11:44</strong></p>
+              <p><span>IP</span> <strong>37.211.5.198</strong></p>
+            </div>
+            <div class="custom-select"></div>
+          </div>
+        </div>
+        <div class="info-withdrow">
+          <h3>Available balance:  <span class="redColor">$ 568.33</span></h3>
+          <div class="info-withdrow-method info-withdrow-one">
+            <div class="info-withdrow-method-input">
+              <p class="info-withdrow-paragraph">
+                Select payment method
+              </p>
+              <select id="select-img">
+                <option value="0" data-imagesrc="img/bitcoin.png"
+                    data-description="1.500567 BTC">Bitcoin</option>
+                <option value="1" data-imagesrc="img/ETHEREUM.png"
+                    data-description="280.500567 ETH">Ethereum</option>
+                <option value="2" selected="selected" data-imagesrc="img/Payeer.png"
+                    data-description="250.00 USD">Payeer</option>
+                <option value="3" data-imagesrc="img/Perfect_Money.png"
+                    data-description="850.00 USD">Perfect Money</option>
+                <option value="4" data-imagesrc="img/Tether.png"
+                    data-description="0.00 USDT">Tether</option>
+                <option value="5" data-imagesrc="img/Litecoin.png"
+                    data-description="0.000000 LTC">Tether</option>
+                <option value="5" data-imagesrc="img/Ripple.png"
+                    data-description="0.000000 XRP">Ripple</option>
+            </select>
+            </div>
+            <div class="info-withdrow-one-block">
+              <p class="info-withdrow-paragraph">
+                Min withdrawal
+              </p>
+              <p class="info-withdrow-row">
+                0.001 BTC
+              </p>
+            </div>
+            <div class="info-withdrow-one-block">
+              <p class="info-withdrow-paragraph">
+                Max withdrawa
+              </p>
+              <p class="info-withdrow-row">
+                Unlimited
+              </p>
+            </div>
+          </div>
+          <div class="info-withdrow-address info-withdrow-one">
+            <div class="info-withdrow-address-input">
+              <p class="info-withdrow-paragraph">
+                Wallet Address
+              </p>
+              <input type="text" value="14xiqKfekcgxG987GVxPQJ9MJQBKjK3gpi" readonly>
+            </div>
+            <a href="#" class="info-withdrow-address-link info-withdrow-link">
+              Set your wallet in settings
+              <i class="icon-arr" class="info-withdrow-link-img"></i>
+            </a>
+          </div>
+          <div class="info-withdrow-amount info-withdrow-one">
+            <div class="info-withdrow-amount-inputs">
+              <p class="info-withdrow-paragraph">
+                Amount
+              </p>
+              <div class="info-withdrow-amount-blocks">
+                <div class="info-withdrow-amount-input-one">
+                  <input type="text" value="100">
+                  <span>USD</span>
+                </div>
+                <div class="info-withdrow-amount-input-one">
+                  <input type="text" value="0,010849">
+                  <span>BTC</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="info-withdrow-amount-link info-withdrow-link">Withdraw all</a>
+          </div>
+        </div>
+        <div class="bottom-info">
+          <p>Withdrawal process may take from <span class="redColor">5 minutes to 24 hours</span> depends on the payment method you've selected.</p>
+          <button class="red-button-head bottom-info-button">Withdraw</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<include src="assets/templates/pop-up.html"></include>
+<include src="assets/templates/footer.html"></include>
+
+<!-- Скрипты -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/ddslick.js"></script>
+<script src="js/acc-withdraw.min.js"></script>
+</html>

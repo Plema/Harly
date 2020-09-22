@@ -1,0 +1,345 @@
+.all-statistic{
+  padding-bottom: 50px;
+}
+.filter-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .left-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+    max-width: 610px;
+    width: 100%;
+    p{
+      min-width: 40px;
+      text-align: center;
+      padding:8px 10px;
+      cursor: pointer;
+      &:hover{
+        background: #ffffff;
+        color: #11171d;
+      }
+    }
+    .active{
+      background: #ffffff;
+      color: #11171d;
+    }
+  }
+}
+.jcf-select{
+  width: 238px;
+  height: 50px;
+  border: 1px solid #5d6989;
+  background-color: #04000f;
+  padding-left: 10px;
+  .jcf-select-text{
+    color: #5d6989;
+    line-height: 48px;
+    background: #04000F;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .jcf-select-opener{
+    background: #04000F;
+    right: 10px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 10px;
+      height: 5px;
+      margin: auto;
+      background: url('../img/arr5.png') no-repeat 50% 50%;
+    }
+  }
+}
+.jcf-focus, .jcf-focus *{
+  border-color:  #5d6989 !important;
+}
+.jcf-list-content{
+  ul{
+    li{
+      padding: 5px 15px;
+      background: #04000F;
+      transition: 0.5s;
+      border: none;
+      cursor: pointer;
+      span{
+        color: #ffffff;
+        background: #04000F;
+        cursor: pointer;
+      }
+      &:hover{
+        background: #2e3956;
+        span{
+          background: #2e3956 !important;
+        }
+      }
+    }
+    .jcf-option{
+      background: #04000F;
+      cursor: pointer;
+      &:hover{
+        background: #2e3956 !important;
+      }
+    }
+  }
+}
+.jcf-list-box, .jcf-selected, .jcf-select-drop, .jcf-hover{
+  background: #04000F !important;
+}
+.jcf-hover{
+  background: #04000F !important;
+  color: #ffffff !important;
+}
+.jcf-list-box .jcf-selected, .jcf-select-drop {
+  background: #04000F;
+}
+.jcf-drop-active{
+  border-color: #ffffff;
+  .jcf-select{
+    border-color: #ffffff;
+  }
+}
+.jcf-select-drop .jcf-select-drop-content{
+  border-color: #ffffff !important;
+}
+.jcf-drop-active{
+  .jcf-select-text{
+    border-color: #ffffff !important;
+  }
+}
+.all-table{
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  .one-row{
+    min-width: 700px;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #5d6989;
+    p{
+      color: #ffffff;
+      margin-right: 10px;
+    }
+    .date{
+      min-width: 150px;
+      max-width: 150px;
+    }
+    .exchange{
+      min-width: 180px;
+      max-width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      img{
+        margin-right: 5px;
+      }
+    }
+    .cryptocurrency{
+      min-width: 150px;
+      max-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      img{
+        margin-right: 5px;
+      }
+    }
+    .type, .income{
+      min-width: 70px;
+      max-width: 70px;
+    }
+    .income{
+      text-align: center;
+      margin-right: 0;
+    }
+    .green{
+      color: #26e4a0;
+    }
+    .red{
+      color: #ff3239;
+    }
+  }
+  .title-row{
+    p{
+      color: #5d6989;
+    }
+  }
+}
+.pagin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  .arrows {
+    &:hover {
+      background: #04000F;
+      border: 1px solid #ffffff;
+      .blueArr {
+        opacity: 0;
+      }
+      .whiteArr {
+        opacity: 1;
+      }
+    }
+  }
+  .active {
+    background-color: #ffffff;
+    color: #04000f;
+  }
+    a {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #2e3956;
+      font-size: 15px;
+      font-weight: 300;
+      color: #5d6989;
+      position: relative;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 300ms ease;
+      &:hover {
+        background-color: #ffffff;
+        color: #04000f;
+      }
+        img {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 20px;
+          height: 10px;
+      }
+      &:last-child {
+        .blueArr {
+          transform: rotate(180deg);
+        }
+        .whiteArr {
+          transform: rotate(180deg);
+        }
+      }
+      .blueArr {
+        opacity: 1;
+        transition: all 300ms ease;
+      }
+      .whiteArr {
+        opacity: 0;
+        transition: all 300ms ease;
+      }
+  }
+  p{
+    margin: 0 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-data{
+    .left-part{
+      p{
+        width: 20%;
+      }
+    }
+  }
+  .all-table{
+    margin-bottom: 55px;
+    .one-row{
+      padding: 15px 30px;
+    }
+  }
+  .pagin{
+    a{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-statistic{
+    padding-bottom: 0;
+  }
+} 
+
+@media (min-width: 1280px) {
+  .filter-data{
+    margin-bottom: 35px;
+    .left-part{
+      margin-bottom: 0;
+    }
+    .jcf-select{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .all-table{
+    .one-row{
+      justify-content: flex-start;
+      .date{
+        margin-right: 100px;
+      }
+      .exchange{
+        margin-right: 100px;
+      }
+      .cryptocurrency{
+        margin-right: 100px;
+      }
+      .type{
+        margin-right: 200px;
+      }
+    }
+  }
+} 
+
+@media (min-width: 1800px) {
+  .all-table{
+    .one-row{
+      justify-content: flex-start;
+      .date{
+        margin-right: 110px;
+      }
+      .exchange{
+        margin-right: 140px;
+      }
+      .cryptocurrency{
+        margin-right: 110px;
+      }
+      .type{
+        margin-right: 300px;
+      }
+    }
+  }
+} 
+
+@media (min-width: 1900px) {
+  .all-table{
+    .one-row{
+      justify-content: flex-start;
+      .cryptocurrency{
+        margin-right: 120px;
+      }
+      .type{
+        margin-right: 315px;
+      }
+    }
+  }
+} 

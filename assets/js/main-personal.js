@@ -25,6 +25,11 @@ $(document).ready(function(){
   $( ".mob-nav-ul > li > a" ).click(function(event) {
     $('.burg-menu').stop().removeClass('open-nav');
   });
+
+
+  $( ".show-block" ).click(function(event) {
+    $('.balance-block').toggleClass('open-balance-block');
+  });
  
 });
 

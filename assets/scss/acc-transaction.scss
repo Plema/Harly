@@ -1,0 +1,315 @@
+.all-transaction{
+  padding-bottom: 50px;
+}
+.block-filter{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .one-inp{
+    &:not(:last-of-type){
+      margin-right: 20px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    .two-in{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      div{
+        width: 140px;
+        height: 50px;
+        position: relative;
+        &:first-of-type{
+          margin-right: 10px;
+        }
+        img{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 5px;
+        }
+        input{
+          width: 140px;
+          border: 1px solid #5d6989;
+          background: transparent;
+          height: 52px;
+          line-height: 52px;
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 300;
+          padding-left: 15px;
+          padding-right: 30px;
+          &:focus{
+            border-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+.datepicker{
+  box-shadow: 0 5px 20px rgba(4, 0, 15, 0.5) ;
+  border: 1px solid #ffffff ;
+  background-color: #04000f;
+}
+.datepicker--pointer{
+  display: none;
+}
+.datepicker--nav{
+  border: none;
+  padding-bottom: 0;
+}
+.datepicker--days-names{
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+}
+.datepicker--day-name{
+  color: #5d6989;
+}
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-{
+  background: #ff3239;
+}
+.datepicker--cell-day{
+  color: #5d6989;
+  &:hover{
+    background: #2e3956;
+  }
+}
+.dd-select{
+  min-width: 230px !important;
+  width: 100% !important;
+  max-width: 230px !important;
+  border-radius: 0 !important;
+  border: 1px solid #5d6989 !important;
+  padding: 0 10px !important;
+  background: #04000F !important;
+  .dd-selected{
+    display: flex;
+    align-items: center;
+    padding: 4px 0 !important;
+    justify-content: flex-start;
+    background: #04000F !important;
+    height: 50px;
+    line-height: 50px;
+    img{
+      margin-right: 10px;
+    }
+    label{
+      color: #ffffff !important;
+    }
+  }
+}
+.dd-options{
+  min-width: 230px !important;
+  width: 100% !important;
+  max-width: 230px !important;
+  background: #04000F !important;
+  box-shadow: none !important;
+  li{
+    .dd-option{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1px 10px !important;
+      height: 50px;
+      line-height: 50px;
+      img{
+        margin-right: 10px;
+      }
+      label{
+        color: #ffffff !important;
+      }
+    }
+    .dd-option-selected{
+      background: #2e3956 !important;
+    }
+  }
+}
+.dd-pointer-down{
+  border-top: solid 5px #ffffff !important;
+}
+.dd-pointer-up{
+  border-bottom: solid 5px #ffffff !important;
+}
+.dd-container {
+  width: 230px !important;
+  max-width: 100% !important;
+  .dd-pointer-down {
+    border-top: solid 5px #ffffff;
+  }
+  .dd-pointer-up {
+    border-bottom: solid 5px #fff !important;
+  }
+}
+.all-table{
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 50px;
+  .one-row{
+    min-width: 550px;
+    border-bottom: 1px solid #5d6989;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover{
+      background: #1F2034;
+    }
+    p{
+      color: #ffffff;
+      margin-right: 20px;
+    }
+    .date{
+      min-width: 150px;
+      max-width: 150px;
+    }
+    .type{
+      min-width: 125px;
+      max-width: 125px;
+    }
+    .amount{
+      min-width: 125px;
+      max-width: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      img{
+        margin-right: 10px;
+      }
+    }
+    .status{
+      min-width: 80px;
+      max-width: 80px;
+      margin-right: 0;
+    }
+    .green{
+      color: #1A966F;
+    }
+    .red{
+      color: #ff3239;
+    }
+  }
+  .title-row{
+
+    p{
+      color: #5d6989;
+    }
+  }
+}
+.pagin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 77px;
+  .arrows {
+    &:hover {
+      background: #04000F;
+      border: 1px solid #ffffff;
+      .blueArr {
+        opacity: 0;
+      }
+      .whiteArr {
+        opacity: 1;
+      }
+    }
+  }
+  .active {
+    background-color: #ffffff;
+    color: #04000f;
+  }
+    a {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #2e3956;
+      font-size: 15px;
+      font-weight: 300;
+      color: #5d6989;
+      position: relative;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 300ms ease;
+      &:hover {
+        background-color: #ffffff;
+        color: #04000f;
+      }
+        img {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 20px;
+          height: 10px;
+      }
+      &:last-child {
+        .blueArr {
+          transform: rotate(180deg);
+        }
+        .whiteArr {
+          transform: rotate(180deg);
+        }
+      }
+      .blueArr {
+        opacity: 1;
+        transition: all 300ms ease;
+      }
+      .whiteArr {
+        opacity: 0;
+        transition: all 300ms ease;
+      }
+  }
+  p{
+    margin: 0 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .all-table{
+    .one-row{
+      padding-left: 30px;
+      padding-right: 50px;
+    }
+  }
+  .pagin{
+    a{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .all-table{
+    .one-row{
+      padding-right: 90px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .all-table{
+    .one-row{
+      .date{
+        margin-right: 150px;
+      }
+      .type{
+        margin-right: 130px;
+      }
+      .amount{
+        margin-right: 140px;
+      }
+    }
+  }
+}

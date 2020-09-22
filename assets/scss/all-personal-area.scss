@@ -19,11 +19,43 @@ header{
         .not-personal{
           display: none;
         }
-        .social{
-          display: none;
-        }
         .personal-nav{
           display: block;
+        }
+        .right-part{
+          .personal-right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            p{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              margin-bottom: 5px;
+              text-align: center;
+              span{
+                color: #ffffff;
+                display: inline;
+              }
+              strong{
+                text-decoration: underline;
+                color: #ffffff;
+              }
+              img{
+                margin-right: 5px;
+              }
+            }
+            a{
+              text-align: center;
+              margin: 0 25px;
+              i{
+                font-size: 24px;
+                color: #ffffff;
+              }
+            }
+          }
         }
       }
     }
@@ -215,6 +247,20 @@ section{
 }
 
 @media (min-width: 768px) {
+  header{
+    .all-head{
+      .right-part{
+        display: none;
+      }
+      .burg-menu{
+        nav{
+          .right-part{
+            display: block;
+          }
+        }
+      }
+    }
+  }
   section{
     .title{
       h2{
@@ -243,10 +289,134 @@ section{
   }
 }
 
+@media (min-width: 1024px) {
+  header{
+    .all-head{
+      max-width: 1770px;
+      width: 100%;
+      margin: 0 auto;
+      .right-part{
+        display: block;
+        .not-persoanl{
+          display: none;
+        }
+        .personal{
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          p{
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+              margin-right: 5px;
+            }
+            span{
+              color: #ffffff;
+              margin-left: 5px;
+            }
+          }
+          a{
+            &:not(:last-of-type){
+              margin-right: 30px;
+            }
+            i{
+              font-size: 26px;
+              color: #5d6989;
+            }
+            &:hover{
+              i{
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navigation{
+    .balance-block{
+      position: relative;
+      .hidden-block{
+        width: 100%;
+        box-shadow: 0 5px 20px rgba(4, 0, 15, 0.5);
+        border: 1px solid #ffffff;
+        background-color: #04000f;
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        max-height: 370px;
+        height: auto;
+        overflow-y: auto;
+        opacity: 0;
+        z-index: -1;
+        top: 108%;
+        ol{
+          margin-bottom: 0;
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border: none;
+            width: auto;
+            height: auto;
+            margin: 0;
+            &:not(:last-of-type){
+              margin-bottom: 10px;
+            }
+            img{
+              max-width: 20px;
+              width: 100%;
+              margin-right: 10px;
+            }
+            p{
+              color: #5d6989;
+              font-size: 13px;
+            }
+          }
+          .white{
+            p{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .open-balance-block{
+      .show-block{
+        .arr-img{
+          transform: rotate(180deg);
+        }
+      }
+      .hidden-block{
+        opacity: 1;
+        z-index: 500;
+      }
+    }
+  }
+}
+
 
 @media (min-width: 1280px) {
   main{
     padding-top: 125px;
+  }
+  header{
+    .all-head{
+      .right-part{
+        .personal{
+          p{
+            &:first-of-type{
+              margin-right: 40px;
+            }
+            &:last-of-type{
+              margin-right: 100px;
+            }
+          }
+        }
+      }
+    }
   }
   .navigation{
     .balance-block{
@@ -279,6 +449,21 @@ section{
         p{
           strong{
             font-size: 24px;
+          }
+        }
+      }
+      .hidden-block{
+        ol{
+          li{
+            &:not(:last-of-type){
+              margin-bottom: 20px;
+            }
+            img{
+              max-width: 30px;
+            }
+            p{
+              font-size: 15px;
+            }
           }
         }
       }

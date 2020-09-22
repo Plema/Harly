@@ -1,0 +1,143 @@
+main{
+  padding-bottom: 50px;
+}
+.sec-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 15px;
+  .left-part{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    p{
+      margin-right: 15px;
+      strong{
+        color: #ffffff;
+      }
+    }
+  }
+  a{
+    padding: 15px 70px 15px 15px;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    img{
+      margin-right: 50px;
+    }
+    span{
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    &:hover{
+      border-color: #5d6989;
+    }
+  }
+}
+.all-messages{
+  margin-bottom: 40px;
+  .one-message{
+    padding: 40px 0;
+    border-bottom: 1px solid #1f2034;
+    .title-mess{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      h5{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      .another-men{
+        color: #319efb;
+      }
+    }
+  }
+}
+.form{
+  form{
+    textarea{
+      resize: none;
+      padding: 15px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      border: 1px solid #5d6989;
+      height: 55px;
+      width: 100%;
+      display: block;
+      background: transparent;
+      line-height: 20px;
+      &::placeholder{
+        color: #5d6989;
+        font-size: 14px;
+      }
+      &:focus{
+        border-color: #ffffff;
+      }
+    }
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      p{
+        margin-bottom: 10px;
+        span{
+          color: #ffffff;
+        }
+      }
+      button{
+        padding: 17px 90px;
+        height: auto;
+        line-height: 100%;
+        width: auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .all-messages{
+    .one-message{
+      .title-mess{
+        h5{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .form{
+    form{
+      div{
+        flex-wrap: nowrap;
+        p{
+          font-size: 13px;
+          margin-bottom: 0;
+          padding-right: 5px;
+        }
+        button{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main{
+    padding-bottom: 120px;
+  }
+}

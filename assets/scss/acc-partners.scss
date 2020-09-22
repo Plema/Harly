@@ -1,0 +1,433 @@
+main{
+  padding-bottom: 50px;
+}
+.table-block{
+  margin-bottom: 20px;
+  .table-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    h3{
+      margin-bottom: 10px;
+      text-transform: none;
+      font-weight: 700;
+    }
+    .right-part{
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border: 1px solid #ffffff;
+      max-width: 320px;
+      width: 100%;
+      p{
+        text-align: center;
+        width: 50%;
+        padding: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+          background: #ffffff;
+          color: #1f1e23;
+        }
+      }
+      .active{
+        background: #ffffff;
+        color: #1f1e23;
+      }
+    }
+  }
+  .table{
+    max-width: 100%;
+    overflow-x: auto;
+    background: #151023;
+    margin-bottom: 20px;
+    .hidden-part{
+      display: none;
+    }
+    .one-row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 790px;
+      border-bottom: 1px solid #1f2034;
+      padding: 8px 25px;
+      .empty{
+        min-width: 40px;
+        margin-right: 10px;
+      }
+      .date{
+        min-width: 130px;
+        margin-right: 5px;
+      }
+      .login{
+        min-width: 130px;
+        margin-right: 5px;
+        color: #ffffff;
+      }
+      .email{
+        min-width: 220px;
+        margin-right: 5px;
+        color: #ffffff;
+      }
+      .deposit{
+        color: #ffffff;
+      }
+      .deposit, .commission{
+        min-width: 120px;
+        margin-right: 5px;
+      }
+      .commission{
+        color: #26e4a0;
+      }
+    }
+    .title-row{
+      padding: 10px 25px;
+      position: relative;
+      cursor: pointer;
+      border-color: #5d6989;
+      .arr-img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        cursor: pointer;
+        margin: auto;
+      }
+      .empty{
+        width: 40px;
+        max-width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid #ff3239;
+        font-size: 20px;
+        font-weight: 700;
+        color:  #ff3239;
+      }
+      .date{
+        span{
+          color: #ffffff;
+          display: block;
+        }
+      }
+      .email{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        p{
+          strong{
+            font-weight: 500;
+            color: #ff3239;
+            display: block;
+            font-size: 18px;
+          }
+          span{
+            color: #ffffff;
+            font-weight: 500;
+            display: block;
+            font-size: 18px;
+          }
+          &:first-of-type{
+            margin-right: 70px;
+          }
+        }
+      }
+      p{
+        color: #5d6989;
+        span{
+          color: #ffffff;
+          font-weight: 500;
+          display: block;
+          font-size: 18px;
+        }
+      }
+      .commission{
+        color: #5d6989;
+        span{
+          font-size: 18px;
+          color: #26e4a0;
+        }
+      }
+    }
+    .title-hidden-part{
+      padding-top: 30px;
+      .date, .login, .email, .deposit, .commission{
+        color: #5d6989;
+      }
+    }
+    .row-pages{
+      max-width: 100%;
+      width: 100%;
+      min-width: 715px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px 20px 40px 30px;
+      background-color: #151023;
+      p{
+        margin-right: 20px;
+        font-size: 15px;
+        span{
+          color: #ffffff;
+        }
+      }
+      a{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: block;
+        border: 1px solid #2e3956;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          &:last-of-type{
+            opacity: 0;
+          }
+        }
+        &:first-of-type{
+          margin-right: 5px;
+        }
+        &:hover{
+          border-color: #ffffff;
+          img{
+            &:last-of-type{
+              opacity: 1;
+            }
+            &:first-of-type{
+              opacity: 0;
+            }
+          }
+        }
+      }
+      .to-right{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .open-table{
+    .hidden-part{
+      display: block;
+    }
+    .title-row{
+      .arr-img{
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.title-partners{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h3{
+      text-transform: none;
+      margin-bottom: 15px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      p{
+        margin-right: 10px;
+      }
+      .inp{
+        max-width: 440px;
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-bottom: 0;
+        input{
+          padding: 0 40px 0 15px;
+          max-width: 440px;
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          border: 1px solid #5d6989;
+          color: #ffffff;
+          font-size: 15px;
+          background: #04000F;
+        }
+        .img{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 7px;
+          width: 17px;
+          height: 17px;
+          margin: auto;
+          cursor: pointer;
+          img{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+          .norm{
+            opacity: 1;
+          }
+          .hov{
+            opacity: 0;
+          }
+          &:hover{
+            .norm{
+              opacity: 0;
+            }
+            .hov{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .table-block{
+    .table{
+      .one-row{
+        padding-left: 50px;
+        min-width: 950px;
+        .empty{
+          min-width: 60px;
+          max-width: 60px;
+        }
+        .date{
+          min-width: 150px;
+          max-width: 150px;
+        }
+        .login{
+          min-width: 140px;
+          max-width: 140px;
+          color: #ffffff;
+        }
+        .email{
+          min-width: 230px;
+          max-width: 230px;
+          color: #ffffff;
+        }
+        .deposit{
+          color: #ffffff;
+        }
+        .deposit, .commission{
+          min-width: 130px;
+          max-width: 130px;
+        }
+      }
+      .title-row{
+        .empty{
+          height: 60px;
+          line-height: 60px;
+          font-size: 24px;
+        }
+        .arr-img{
+          left: 30px;
+        }
+      }
+      .row-pages{
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main{
+    padding-bottom: 90px;
+  }
+  .title-partners{
+    .top{
+      h3{
+        font-size: 24px;
+      }
+    }
+  }
+  .table-block{
+    .table-title{
+      h3{
+        font-size: 24px;
+      }
+    }
+    .table{
+      .one-row{
+        padding-left: 70px;
+        .empty{
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .table-block{
+    .table{
+      .one-row{
+        padding-right: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1750px) {
+  .table-block{
+    .table{
+      .one-row{
+        justify-content: flex-start;
+        .date{
+          margin-right: 200px;
+        }
+        .login{
+          margin-right: 50px;
+        }
+        .email{
+          margin-right: 50px;
+        }
+        .deposit{
+          margin-right: 75px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .title-partners{
+    .top{
+      div{
+        flex-wrap: nowrap;
+        min-width: 500px;
+        justify-content: flex-end;
+        .inp{
+          min-width: 400px;
+          width: auto;
+          .img{
+            right: 10px;
+            width: 17px;
+            min-width: 17px;
+          }
+        }
+      }
+    }
+  }
+}
