@@ -36,22 +36,47 @@
       .big-marg{
         margin-bottom: 25px;
       }
-      div{
-        padding: 10px;
-        border: 1px solid #5d6989;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
+      .inp{
         max-width: 440px;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 40px;
-        p{
+        position: relative;
+        padding: 0;
+        input{
           margin-bottom: 0;
+          border: 1px solid #5d6989;
+          background: transparent;
+          padding: 10px 30px 10px 10px;
+          min-width: 290px;
+          max-width: 440px;
+          width: 100%;
+          color: #ffffff;
         }
-        img{
+        .im{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 7px;
+          margin: auto;
+          width: 16px;
+          height: 16px;
           cursor: pointer;
+          padding: 0;
+          img{
+            position: absolute;
+          }
+          .hov{
+            opacity: 0;
+          }
+          &:hover{
+            .hov{
+              opacity: 1;
+            }
+            .norm{
+              opacity: 0;
+            }
+          }
         }
       }
     }
@@ -70,30 +95,32 @@
     transition: 0.5s;
     position: relative;
     padding-bottom: 5px;
-    &:before{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: #ffffff;
-      content: '';
-      transition: 0.5s;
-    }
-    img{
-      font-size: 10px;
-      color: #ffffff;
-      transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    p{
+      transform: rotate(180deg);
+      i{
+        font-size: 9px;
+        color: #ffffff;
+        transition: 0.5s;
+      }
     }
     span{
       color: #ffffff;
       font-size: 15px;
       font-weight: 300;
       transition: 0.5s;
+      margin-left: 7px;
     }
     &:hover{
-      &:before{
-        width: 100%;
+      span{
+        color: #ff3239;
+      }
+      i{
+        color: #ff3239;
       }
     }
   }
@@ -113,6 +140,14 @@
         div{
           padding: 15px;
           justify-content: space-between;
+        }
+        .inp{
+          input{
+            padding: 15px 40px 15px 15px;
+          }
+          .im{
+            right: 15px;
+          }
         }
       }
       .qr-code{

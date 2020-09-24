@@ -105,6 +105,9 @@ section{
             margin-bottom: 10px;
             border-bottom: 2px solid transparent;
             transition: 0.5s;
+            &:hover{
+              background: #211C2E;
+            }
             .title-quest{
               display: flex;
               align-items: flex-start;

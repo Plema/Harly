@@ -1,8 +1,14 @@
 main{
+  padding-top: 100px;
   .all-right-block{
     h4{
       text-transform: none;
     }
+  }
+}
+@media (min-width: 1280px){
+  main{
+    padding-top: 125px;
   }
 }
 @media (min-width: 1400px){

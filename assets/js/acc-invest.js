@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  $('#navigation-without-full > li').removeClass('active')
+  $('.invest-nav').addClass('active')
+
+
   var customSelect = $('.select1');
   jcf.setOptions('Select', {
     wrapNative: false,

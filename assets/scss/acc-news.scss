@@ -61,7 +61,7 @@
             transition: all 300ms ease;
             position: relative;
             &:hover {
-              color: #ffffff;
+              background-color: #ffffff;
             }
           }
           .active {
@@ -246,6 +246,7 @@
         margin: 0;
         max-width: 100%;
         padding-top: 10px;
+        justify-content: space-between;
           .one-news {
             width: 255px;
             max-width: 100%;

@@ -35,41 +35,47 @@
         </div>
       </div>
       <div class="block-filter">
-        <div class="one-inp">
-          <p>Operations</p>
-          <select class="select2 without-img"  id='select-without-img'>
-            <option value="0"  selected="selected">All</option>
-            <option value="1">Ethereum</option>
-            <option value="2">Payeer</option>
-            <option value="3">Perfect Money</option>
-            <option value="4">Tether</option>
-            <option value="6">Ripple</option>
-          </select>
-        </div>
-        <div class="one-inp">
-          <p>Payment</p>
-          <select class="select2"  id='select-img'>
-            <option value="0" data-imagesrc="img/bitcoin.png">Bitcoin</option>
-            <option value="1" data-imagesrc="img/ETHEREUM.png">Ethereum</option>
-            <option value="2" selected="selected" data-imagesrc="img/Payeer.png">Payeer</option>
-            <option value="3" data-imagesrc="img/Perfect_Money.png">Perfect Money</option>
-            <option value="4" data-imagesrc="img/Tether.png">Tether</option>
-            <option value="5" data-imagesrc="img/Litecoin.png">Tether</option>
-            <option value="6" data-imagesrc="img/Ripple.png">Ripple</option>
-          </select>
-        </div>
-        <div class="one-inp">
-          <p>Period</p>
-          <div class="two-in">
-            <div>
-              <input type='text' class="datepicker-here" id="data1" placeholder="From"/>
-              <img src="img/calendar.png" alt="">
-            </div>
-            <div>
-              <img src="img/calendar.png" alt="">
-              <input type='text' class="datepicker-here" id="data2" placeholder="To"/>
+        <div class="left-part">
+          <div class="one-inp">
+            <p>Operations</p>
+            <select class="select2 without-img"  id='select-without-img'>
+              <option value="0"  selected="selected">All</option>
+              <option value="1">Ethereum</option>
+              <option value="2">Payeer</option>
+              <option value="3">Perfect Money</option>
+              <option value="4">Tether</option>
+              <option value="6">Ripple</option>
+            </select>
+          </div>
+          <div class="one-inp">
+            <p>Payment</p>
+            <select class="select2"  id='select-img'>
+              <option value="0" data-imagesrc="img/bitcoin.png">Bitcoin</option>
+              <option value="1" data-imagesrc="img/ETHEREUM.png">Ethereum</option>
+              <option value="2" selected="selected" data-imagesrc="img/Payeer.png">Payeer</option>
+              <option value="3" data-imagesrc="img/Perfect_Money.png">Perfect Money</option>
+              <option value="4" data-imagesrc="img/Tether.png">Tether</option>
+              <option value="5" data-imagesrc="img/Litecoin.png">Tether</option>
+              <option value="6" data-imagesrc="img/Ripple.png">Ripple</option>
+            </select>
+          </div>
+          <div class="one-inp">
+            <p>Period</p>
+            <div class="two-in">
+              <div>
+                <input type='text' class="datepicker-here" id="data1" placeholder="From"/>
+                <img src="img/calendar.png" alt="">
+              </div>
+              <div>
+                <img src="img/calendar.png" alt="">
+                <input type='text' class="datepicker-here" id="data2" placeholder="To"/>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="right-part">
+          <p class="clear">Clear</p>
+          <button class="red-button-head">APPLY</button>
         </div>
       </div>
       <div class="all-table">
@@ -104,7 +110,7 @@
             <img src="img/bitcoin.png" alt="">
             <span  class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -122,7 +128,7 @@
             <img src="img/bitcoin.png" alt="">
             <span>-$ 99.00</span>
           </p>
-          <p class="status red">Pending</p>
+          <p class="status red">Error</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -131,7 +137,7 @@
             <img src="img/bitcoin.png" alt="">
             <span  class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -140,7 +146,7 @@
             <img src="img/bitcoin.png" alt="">
             <span  class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -158,7 +164,7 @@
             <img src="img/bitcoin.png" alt="">
             <span  class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -207,9 +213,10 @@
 
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/datepicker.min.js"></script>
 <script src="js/ddslick.js"></script>
+<script src="js/jcf.js"></script>
+<script src="js/jcf.select.js"></script>
 <script src="js/main-personal.min.js"></script>
 <script src="js/acc-transaction.min.js"></script>
 

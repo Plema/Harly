@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/front.png">
-  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/jcf.css" data-inprogress="">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/all-personal-area.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/Errors.min.css" data-inprogress="">
@@ -72,7 +72,7 @@
             <div class="personal personal-right">
               <p><img src="img/block.png" alt="">Secure connection</p>
               <p>Welcome: <span> Alexander Smith</span></p>
-              <p><strong>My balance</strong></p>
+              <p class="open-mob-balance"><strong>My balance</strong></p>
               <a href="">
                 <i class="icon-support"></i>
               </a>
@@ -162,12 +162,12 @@
 
   <ul class="navigation-without-full">
     <div id="navigation-without-full">
-      <li class="active"><a href="index.html#top">Account</a></li>
-      <li><a href="index.html#about">Invest</a></li>
-      <li><a href="index.html#plan">Finance</a></li>
-      <li><a href="index.html#aff">Withdraw</a></li>
-      <li><a href="index.html#new">Partners</a></li>
-      <li><a href="index.html#FAQ">Transactions</a></li>
+      <li class="main-pers-nav active"><a href="account-main-personal-area.html">Account</a></li>
+      <li class="invest-nav"><a href="account-invest.html">Invest</a></li>
+      <li class="finance-nav"><a href="account-finance.html">Finance</a></li>
+      <li class="withdraw-nav"><a href="account_withdrow.html">Withdraw</a></li>
+      <li class="partners-nav"><a href="acc-partners.html">Partners</a></li>
+      <li class="transaction-nav"><a href="acc-transaction.html">Transactions</a></li>
     </div>
   </ul>
 
@@ -330,7 +330,6 @@
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
     <img src="img/close-hov.png" alt="">
-
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -348,10 +347,81 @@
   </div>
 </div>
 
+<div class="pop-up2 create-ticket">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <h4>Create ticket</h4>
+    <p>Do you have any questions? Fill out the feedback form</p>
+    <form action="">
+      <select class="select-pop">
+        <option value="Scalp-plan">Topic</option>
+        <option value="Swing-plan">Topic</option>
+        <option value="Day-plan">Topic</option>
+      </select>
+      <input type="text" placeholder="Title">
+      <textarea placeholder="Message"></textarea>
+      <button class="red-button-head">Create ticket</button>
+    </form>
+  </div>
+</div>
+
+<div class="pop-up2 balance-pop">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <div class="balance-block">
+      <div class="show-block">
+        <span>My balance:</span>
+        <p>
+          <strong>$ 1 568.33</strong>
+          <span>+$ 33.00</span>
+        </p>
+      </div>
+      <div class="hidden-block">
+        <ol>
+          <li class="white">
+            <img src="img/bitcoin.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/ETHEREUM.png" alt="">
+            <p>280.500567 ETH</p>
+          </li>
+          <li class="white">
+            <img src="img/Payeer.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/Perfect_Money.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li>
+            <img src="img/2-layers.png" alt="">
+            <p>0.00 USDT</p>
+          </li>
+          <li>
+            <img src="img/LTC.png" alt="">
+            <p>0.00 LTC</p>
+          </li>
+          <li>
+            <img src="img/Xrp.png" alt="">
+            <p>0.000000 XRP</p>
+          </li>
+        </ol>
+      </div>
+  </div>
+</div></div>
+
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/main-personal.min.js"></script>
+<script src="js/jcf.js"></script>
+<script src="js/jcf.select.js"></script>
 <script src="js/errors.min.js"></script>
 
 </body>

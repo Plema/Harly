@@ -42,9 +42,47 @@
           bottom: 0;
           margin: auto;
         }
+        i{
+          color:  #5d6989;
+          position: absolute;
+          top: 0;
+          left: 10px;
+          bottom: 0;
+          margin: auto;
+          font-size: 20px;
+          width: 22px;
+          height: 20px
+        }
+        .icon-person2{
+          width: 20px;
+          height: 20px;
+        }
+        .icon-mail{
+          font-size: 16px;
+        }
         .block{
           left: auto;
           right: 10px;
+        }
+      }
+      .green-inp{
+        input{
+          color: #26e4a0;
+          box-shadow: 0 0 8px rgba(38, 228, 160, 0.2);
+          border: 1px solid #26e4a0;
+        }
+        i{
+          color: #26e4a0;
+        }
+      }
+      .red-inp{
+        i{
+          color: #ff3239;
+        }
+        input{
+          color: #ff3239;
+          box-shadow: 0 0 8px rgba(255, 50, 57, 0.2);
+          border: 1px solid #ff3239;
         }
       }
       p{
@@ -95,15 +133,12 @@
       .red-inpur{
         margin-bottom: 20px;
         .inp{
-          .not-ok{
-            display: block;
-          }
-          .ok{
-            display: none;
-          }
           input{
             box-shadow: 0 0 8px rgba(255, 50, 57, 0.2);
             border: 1px solid #ff3239;
+            color: #ff2139;
+          }
+          i{
             color: #ff2139;
           }
         }

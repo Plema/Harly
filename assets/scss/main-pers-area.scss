@@ -163,9 +163,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #5d6989;
+      border-bottom: 1px solid #1F1F34;
       padding: 15px 15px;
       min-width: 570px;
+      &:hover{
+        background-color: #1f2034;
+      }
       .date{
         min-width: 150px;
         max-width: 150px;
@@ -190,6 +193,9 @@
         }
         p{
           color: #ffffff;
+        }
+        .error{
+          color: #ff3239;
         }
       }
       .status{

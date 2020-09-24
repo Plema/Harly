@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.burg-menu').removeClass('open-nav');
     $('.back-dark').addClass('op-back');
     $('.login-pop').addClass('open-pop');
-    $('body').css('overflow','hidden')
+    $('body').css('overflow','hidden');
   });
 
   $( ".open-reg" ).click(function(event) {
@@ -53,6 +53,7 @@ $(document).ready(function(){
   
   $( ".close-pop" ).click(function(event) {
     $('.pop-up').removeClass('open-pop');
+    $('.pop-up2').removeClass('open-pop2');
     $('.back-dark').removeClass('op-back');
     $('body').css('overflow','auto')
 
@@ -60,6 +61,7 @@ $(document).ready(function(){
   
   $( ".back-dark" ).click(function(event) {
     $('.back-dark').removeClass('op-back');
+    $('.pop-up2').removeClass('open-pop2');
     $('.pop-up').removeClass('open-pop');
     $('body').css('overflow','auto')
   });

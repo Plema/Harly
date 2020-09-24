@@ -73,7 +73,7 @@
             <div class="personal personal-right">
               <p><img src="img/block.png" alt="">Secure connection</p>
               <p>Welcome: <span> Alexander Smith</span></p>
-              <p><strong>My balance</strong></p>
+              <p class="open-mob-balance"><strong>My balance</strong></p>
               <a href="">
                 <i class="icon-support"></i>
               </a>
@@ -163,12 +163,12 @@
 
   <ul class="navigation-without-full">
     <div id="navigation-without-full">
-      <li class="active"><a href="index.html#top">Account</a></li>
-      <li><a href="index.html#about">Invest</a></li>
-      <li><a href="index.html#plan">Finance</a></li>
-      <li><a href="index.html#aff">Withdraw</a></li>
-      <li><a href="index.html#new">Partners</a></li>
-      <li><a href="index.html#FAQ">Transactions</a></li>
+      <li class="main-pers-nav active"><a href="account-main-personal-area.html">Account</a></li>
+      <li class="invest-nav"><a href="account-invest.html">Invest</a></li>
+      <li class="finance-nav"><a href="account-finance.html">Finance</a></li>
+      <li class="withdraw-nav"><a href="account_withdrow.html">Withdraw</a></li>
+      <li class="partners-nav"><a href="acc-partners.html">Partners</a></li>
+      <li class="transaction-nav"><a href="acc-transaction.html">Transactions</a></li>
     </div>
   </ul>
 
@@ -205,41 +205,47 @@
         </div>
       </div>
       <div class="block-filter">
-        <div class="one-inp">
-          <p>Operations</p>
-          <select class="select2 without-img" id="select-without-img">
-            <option value="0" selected="selected">All</option>
-            <option value="1">Ethereum</option>
-            <option value="2">Payeer</option>
-            <option value="3">Perfect Money</option>
-            <option value="4">Tether</option>
-            <option value="6">Ripple</option>
-          </select>
-        </div>
-        <div class="one-inp">
-          <p>Payment</p>
-          <select class="select2" id="select-img">
-            <option value="0" data-imagesrc="img/bitcoin.png">Bitcoin</option>
-            <option value="1" data-imagesrc="img/ETHEREUM.png">Ethereum</option>
-            <option value="2" selected="selected" data-imagesrc="img/Payeer.png">Payeer</option>
-            <option value="3" data-imagesrc="img/Perfect_Money.png">Perfect Money</option>
-            <option value="4" data-imagesrc="img/Tether.png">Tether</option>
-            <option value="5" data-imagesrc="img/Litecoin.png">Tether</option>
-            <option value="6" data-imagesrc="img/Ripple.png">Ripple</option>
-          </select>
-        </div>
-        <div class="one-inp">
-          <p>Period</p>
-          <div class="two-in">
-            <div>
-              <input type="text" class="datepicker-here" id="data1" placeholder="From">
-              <img src="img/calendar.png" alt="">
-            </div>
-            <div>
-              <img src="img/calendar.png" alt="">
-              <input type="text" class="datepicker-here" id="data2" placeholder="To">
+        <div class="left-part">
+          <div class="one-inp">
+            <p>Operations</p>
+            <select class="select2 without-img" id="select-without-img">
+              <option value="0" selected="selected">All</option>
+              <option value="1">Ethereum</option>
+              <option value="2">Payeer</option>
+              <option value="3">Perfect Money</option>
+              <option value="4">Tether</option>
+              <option value="6">Ripple</option>
+            </select>
+          </div>
+          <div class="one-inp">
+            <p>Payment</p>
+            <select class="select2" id="select-img">
+              <option value="0" data-imagesrc="img/bitcoin.png">Bitcoin</option>
+              <option value="1" data-imagesrc="img/ETHEREUM.png">Ethereum</option>
+              <option value="2" selected="selected" data-imagesrc="img/Payeer.png">Payeer</option>
+              <option value="3" data-imagesrc="img/Perfect_Money.png">Perfect Money</option>
+              <option value="4" data-imagesrc="img/Tether.png">Tether</option>
+              <option value="5" data-imagesrc="img/Litecoin.png">Tether</option>
+              <option value="6" data-imagesrc="img/Ripple.png">Ripple</option>
+            </select>
+          </div>
+          <div class="one-inp">
+            <p>Period</p>
+            <div class="two-in">
+              <div>
+                <input type="text" class="datepicker-here" id="data1" placeholder="From">
+                <img src="img/calendar.png" alt="">
+              </div>
+              <div>
+                <img src="img/calendar.png" alt="">
+                <input type="text" class="datepicker-here" id="data2" placeholder="To">
+              </div>
             </div>
           </div>
+        </div>
+        <div class="right-part">
+          <p class="clear">Clear</p>
+          <button class="red-button-head">APPLY</button>
         </div>
       </div>
       <div class="all-table">
@@ -274,7 +280,7 @@
             <img src="img/bitcoin.png" alt="">
             <span class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -292,7 +298,7 @@
             <img src="img/bitcoin.png" alt="">
             <span>-$ 99.00</span>
           </p>
-          <p class="status red">Pending</p>
+          <p class="status red">Error</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -301,7 +307,7 @@
             <img src="img/bitcoin.png" alt="">
             <span class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -310,7 +316,7 @@
             <img src="img/bitcoin.png" alt="">
             <span class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -328,7 +334,7 @@
             <img src="img/bitcoin.png" alt="">
             <span class="red">-$ 99.00</span>
           </p>
-          <p class="status green">Pending</p>
+          <p class="status green">Success</p>
         </div>
         <div class="one-row">
           <p class="date">Jan 30, 2020 / 6:37</p>
@@ -460,7 +466,6 @@
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
     <img src="img/close-hov.png" alt="">
-
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -478,11 +483,82 @@
   </div>
 </div>
 
+<div class="pop-up2 create-ticket">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <h4>Create ticket</h4>
+    <p>Do you have any questions? Fill out the feedback form</p>
+    <form action="">
+      <select class="select-pop">
+        <option value="Scalp-plan">Topic</option>
+        <option value="Swing-plan">Topic</option>
+        <option value="Day-plan">Topic</option>
+      </select>
+      <input type="text" placeholder="Title">
+      <textarea placeholder="Message"></textarea>
+      <button class="red-button-head">Create ticket</button>
+    </form>
+  </div>
+</div>
+
+<div class="pop-up2 balance-pop">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <div class="balance-block">
+      <div class="show-block">
+        <span>My balance:</span>
+        <p>
+          <strong>$ 1 568.33</strong>
+          <span>+$ 33.00</span>
+        </p>
+      </div>
+      <div class="hidden-block">
+        <ol>
+          <li class="white">
+            <img src="img/bitcoin.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/ETHEREUM.png" alt="">
+            <p>280.500567 ETH</p>
+          </li>
+          <li class="white">
+            <img src="img/Payeer.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/Perfect_Money.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li>
+            <img src="img/2-layers.png" alt="">
+            <p>0.00 USDT</p>
+          </li>
+          <li>
+            <img src="img/LTC.png" alt="">
+            <p>0.00 LTC</p>
+          </li>
+          <li>
+            <img src="img/Xrp.png" alt="">
+            <p>0.000000 XRP</p>
+          </li>
+        </ol>
+      </div>
+  </div>
+</div></div>
+
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/datepicker.min.js"></script>
 <script src="js/ddslick.js"></script>
+<script src="js/jcf.js"></script>
+<script src="js/jcf.select.js"></script>
 <script src="js/main-personal.min.js"></script>
 <script src="js/acc-transaction.min.js"></script>
 

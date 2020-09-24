@@ -73,7 +73,7 @@
             <div class="personal personal-right">
               <p><img src="img/block.png" alt="">Secure connection</p>
               <p>Welcome: <span> Alexander Smith</span></p>
-              <p><strong>My balance</strong></p>
+              <p class="open-mob-balance"><strong>My balance</strong></p>
               <a href="">
                 <i class="icon-support"></i>
               </a>
@@ -121,13 +121,13 @@
   
   <ul class="navigation-without-full">
     <div id="navigation-without-full">
-      <li class="active"><a href="index.html#top">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#plan">Plans & pricing</a></li>
-      <li><a href="index.html#aff">Affilatiates</a></li>
-      <li><a href="index.html#new">News</a></li>
-      <li><a href="index.html#FAQ">FAQ</a></li>
-      <li><a href="index.html#contact">Contact us</a></li>
+      <li class="active"><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#plan">Plans & pricing</a></li>
+      <li><a href="#aff">Affilatiates</a></li>
+      <li><a href="#new">News</a></li>
+      <li><a href="#FAQ">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
     </div>
   </ul>
   <div class="links">
@@ -1064,7 +1064,6 @@
   <div class="close-pop">
     <img src="img/close-pop.png" alt="">
     <img src="img/close-hov.png" alt="">
-
   </div>
   <div class="title">
     <h6>Don't have an account yet? Register now</h6>
@@ -1082,11 +1081,83 @@
   </div>
 </div>
 
+<div class="pop-up2 create-ticket">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <h4>Create ticket</h4>
+    <p>Do you have any questions? Fill out the feedback form</p>
+    <form action="">
+      <select class="select-pop">
+        <option value="Scalp-plan">Topic</option>
+        <option value="Swing-plan">Topic</option>
+        <option value="Day-plan">Topic</option>
+      </select>
+      <input type="text" placeholder="Title">
+      <textarea placeholder="Message"></textarea>
+      <button class="red-button-head">Create ticket</button>
+    </form>
+  </div>
+</div>
+
+<div class="pop-up2 balance-pop">
+  <div class="close-pop">
+    <img src="img/close-pop.png" alt="">
+    <img src="img/close-hov.png" alt="">
+  </div>
+  <div class="content">
+    <div class="balance-block">
+      <div class="show-block">
+        <span>My balance:</span>
+        <p>
+          <strong>$ 1 568.33</strong>
+          <span>+$ 33.00</span>
+        </p>
+      </div>
+      <div class="hidden-block">
+        <ol>
+          <li class="white">
+            <img src="img/bitcoin.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/ETHEREUM.png" alt="">
+            <p>280.500567 ETH</p>
+          </li>
+          <li class="white">
+            <img src="img/Payeer.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li class="white">
+            <img src="img/Perfect_Money.png" alt="">
+            <p>1.500567 BTC</p>
+          </li>
+          <li>
+            <img src="img/2-layers.png" alt="">
+            <p>0.00 USDT</p>
+          </li>
+          <li>
+            <img src="img/LTC.png" alt="">
+            <p>0.00 LTC</p>
+          </li>
+          <li>
+            <img src="img/Xrp.png" alt="">
+            <p>0.000000 XRP</p>
+          </li>
+        </ol>
+      </div>
+  </div>
+</div></div>
+
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jcf.js"></script>
 <script src="js/jcf.select.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jcf.js"></script>
+<script src="js/jcf.select.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
 <script src="js/FAQ.min.js"></script>
 <script src="js/script.min.js"></script>

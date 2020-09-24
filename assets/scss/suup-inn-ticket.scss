@@ -30,7 +30,10 @@ main{
     justify-content: flex-start;
     margin-bottom: 5px;
     transition: 0.5s;
-    img{
+    i{
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 300;
       margin-right: 50px;
     }
     span{
@@ -39,7 +42,10 @@ main{
       font-weight: 300;
     }
     &:hover{
-      border-color: #5d6989;
+      background: #ffffff;
+      span, i{
+        color: #1f1e23;
+      }
     }
   }
 }
@@ -90,7 +96,7 @@ main{
     div{
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
       p{
         margin-bottom: 10px;
@@ -123,6 +129,7 @@ main{
     form{
       div{
         flex-wrap: nowrap;
+        justify-content: space-between;
         p{
           font-size: 13px;
           margin-bottom: 0;
@@ -139,5 +146,17 @@ main{
 @media (min-width: 1024px) {
   main{
     padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sec-title{
+    .left-part{
+      p{
+        &:not(:last-of-type){
+          margin-right: 50px;
+        }
+      }
+    }
   }
 }

@@ -64,7 +64,6 @@ header{
 .navigation{
   top: 100px;
   transform: translate(0,0);
-  overflow: auto;
   ul{
     margin-bottom: 20px;
   }
@@ -162,7 +161,7 @@ header{
       display: block;
       transition: 0.5s;
       &:hover{
-        border-color: #ffffff;
+        background:  #2e3956;
       }
     }
   }
@@ -270,6 +269,7 @@ section{
         justify-content: space-between;
         .crumbs{
           li{
+            margin-bottom: 5px;
             a{
               font-size: 15px;
             }

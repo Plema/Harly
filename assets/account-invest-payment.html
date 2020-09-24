@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="icon" type="image/png" sizes="16x16" href="./img/front.png">
+  <link rel="stylesheet" href="css/jcf.css" data-inprogress="">
+
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/all-personal-area.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/invest-payment.min.css" data-inprogress="">
@@ -39,9 +41,12 @@
               <p>Amount:<strong> 0.01400 BTC</strong></p>
               <p>To finish funding operation you have to make transaction to 
               specified address</p>
-              <div>
-                <p id='code-copy'>1C1B1du8YvMwPxwmxE9MiTrwEcrS8un2pr</p>
-                <img src="img/copy.png" alt="" id="copy">
+              <div class="inp">
+                <input type="text" readonly value="1C1B1du8YvMwPxwmxE9MiTrwEcrS8un2pr"></input>
+                <div class="im">
+                  <img src="img/copy.png" alt="" id="copy"  class="norm">
+                  <img src="img/white-copy.png" alt="" id="copy"  class="hov">
+                </div>
               </div>
               <p>Or scan the QR code</p>
               <p class="big-marg">Order Status:<strong> Pending Payment</strong></p>
@@ -52,7 +57,7 @@
             </div>
           </div>
           <a href="#" class="go-back">
-            <img src="img/arr6.png" alt="">
+            <p><i class="icon-arr"></i></p>
             <span>Go back</span>
           </a>
         </div>
@@ -65,8 +70,9 @@
 
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/map.min.js"></script>
-<script src="js/slick.min.js"></script>
+<script src="js/jcf.js"></script>
+<script src="js/jcf.select.js"></script>
 <script src="js/script.min.js"></script>
+<script src="js/main-personal.min.js"></script>
 <script src="js/acc-invest-pay.min.js"></script>
 </html>

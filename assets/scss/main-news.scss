@@ -157,13 +157,13 @@ section {
         &:nth-child(3){
           display: none;
         }
-        &:hover {
-          opacity: 0.5;
-        }
         a {
           font-size: 10px;
           line-height: 20px;
           margin-top: 18px;
+          &:hover {
+            color: #ff3239;
+          }
         }
         p {
           margin-top: 8px;
@@ -251,6 +251,9 @@ section {
       }
     }
   }
+  .social{
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -277,9 +280,9 @@ section {
         }
       }
       .all-right-block{
-        padding-top: 60px;
+        padding-top: 80px;
         h4{
-          margin-bottom: 40px;
+          margin-bottom: 30px;
           font-size: 20px;
         }
       }

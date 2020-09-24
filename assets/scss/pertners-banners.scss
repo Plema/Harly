@@ -51,10 +51,36 @@
         border: 1px solid #5d6989;
         max-width: 590px;
         width: 100%;
-        img{
+        position: relative;
+        .im{
+          max-width: 17px;
+          min-width: 17px;
+          width: 17px;
           cursor: pointer;
-          width: auto;
           margin-bottom: 0;
+          height: 17px;
+          border: none;
+          padding: 0;
+          display: block;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+          .hov{
+            opacity: 0;
+          }
+          &:hover{
+            .hov{
+              opacity: 1;
+            }
+            .norm{
+              opacity: 0;
+            }
+          }
         }
       }
     }
