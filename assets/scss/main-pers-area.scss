@@ -3,11 +3,11 @@
   border-bottom: 1px solid #ffffff;
   margin-bottom: 45px;
   .left-circle{
-    max-width: 440px;
+    max-width: 460px;
     margin: 0 auto 25px;
     width: 100%;
     padding: 20px;
-    background: url('../img/circle-area.png') no-repeat 50% 50%;
+    background: url('../img/circle-area.gif') no-repeat 50% 50%;
     background-size: contain;
     min-height: 300px;
     display: flex;
@@ -238,7 +238,7 @@
 @media (min-width: 500px)  {
   .top-block{
     .left-circle{
-      min-height: 440px;
+      min-height: 460px;
       div{
         margin-bottom: 50px;
         h4{
