@@ -58,6 +58,7 @@ main{
       font-weight: 500;
       position: relative;
       padding-left: 20px;
+      cursor: pointer;
       &:before, &:after{
         content: '';
         position: absolute;
@@ -110,7 +111,7 @@ main{
         color: #5d6989;
       }
     }
-    .hidden{
+    .child{
       display: none;
     }
   }
@@ -123,7 +124,7 @@ main{
         content: '-';
       }
     }
-    .hidden{
+    .child{
       display: block;
     }
   }

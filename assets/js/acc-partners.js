@@ -25,4 +25,8 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
+  $( ".open-list" ).click(function(event) {
+    $(this).parent().toggleClass('open');
+  });
+
 });
