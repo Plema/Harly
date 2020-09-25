@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.25" height="14" viewBox="0 0 12.25 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Referral_icon" data-name="Referral icon" class="cls-1" d="M1127.32,941.512a3.5,3.5,0,1,0-3.5-3.5A3.5,3.5,0,0,0,1127.32,941.512Zm2.45,0.875h-0.46a4.762,4.762,0,0,1-3.99,0h-0.45a3.679,3.679,0,0,0-3.68,3.675V947.2a1.314,1.314,0,0,0,1.31,1.312h9.63a1.314,1.314,0,0,0,1.31-1.312v-1.138A3.671,3.671,0,0,0,1129.77,942.387Z" transform="translate(-1121.19 -934.5)"/>
+</svg>

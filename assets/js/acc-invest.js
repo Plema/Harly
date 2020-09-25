@@ -19,4 +19,11 @@ $(document).ready(function(){
     selectText: "Select your favorite social network",
   });
 
+  document.querySelector('#input1').addEventListener('keyup', function(){
+    this.value = this.value.replace(/[^\d]/g, '');
+  });
+  document.querySelector('#input2').addEventListener('keyup', function(){
+    this.value = this.value.replace(/[^\d]/g, '');
+  });
+
 });
