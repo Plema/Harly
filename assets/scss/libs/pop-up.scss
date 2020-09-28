@@ -479,6 +479,12 @@
     }
   }
 }
+.video-pop{
+  iframe{
+    // max-width: 100%;
+    width: 100%;
+  }
+}
 .open-pop{
   transform: translate(0,0);
   opacity: 1;
@@ -526,6 +532,9 @@
   .balace-pop{
     max-width: 290px;
     padding: 25px 10px;
+  }
+  .video-pop{
+    padding: 15px;
   }
 }
 
@@ -577,6 +586,23 @@
     min-height: 100vh;
     .title{
       margin-bottom: 125px;
+    }
+  }
+}
+
+@media (min-width:  1400px) {
+  .video-pop{
+    width: 975px;
+    height: 660px;
+    iframe{
+      width: 900px !important;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 550px;
     }
   }
 }

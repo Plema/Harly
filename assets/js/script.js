@@ -48,6 +48,15 @@ $(document).ready(function(){
     $('.back-dark').addClass('op-back');
     $('.rec-pop').addClass('open-pop');
     $('body').css('overflow','hidden')
+  });
+
+
+  $( ".open-pop-video" ).click(function(event) {
+    $('.pop-up').removeClass('open-pop');
+    $('.burg-menu').removeClass('open-nav');
+    $('.back-dark').addClass('op-back');
+    $('.video-pop').addClass('open-pop2');
+    $('body').css('overflow','hidden')
 
   });
   
