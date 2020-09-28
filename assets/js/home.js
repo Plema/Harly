@@ -146,4 +146,25 @@ $(document).ready(function(){
     }
 
     $(document).on('scroll', onScroll);
+
+    var navSection2 = '#navigation-without-full2';
+    function onScroll2(){
+    $(navSection2 + ' a').each(function(){
+        var anchor2      = $(this).attr('href');
+        var scrollTop2   = $(document).scrollTop();
+        var positionTop2 = $(anchor2).offset().top;
+        var outerHeight2 = $(anchor2).outerHeight();
+
+
+        if ((positionTop2-$(window).height()/2 <= scrollTop2) && (positionTop2 + outerHeight2 > scrollTop2)) {
+          console.log(anchor2)
+        $(navSection2 + ' li.active').removeClass('active');
+        $($(this).parent()).addClass('active');
+        } else {
+        $($(this).parent()).removeClass('active');
+        }
+    });
+    }
+
+    $(document).on('scroll', onScroll2);
 });

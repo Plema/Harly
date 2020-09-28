@@ -8,6 +8,9 @@
 .right-fixed{
   display: none;
 }
+#navigation-without-full2{
+  display: none;
+}
 section {
   .all-banner{
     margin-bottom: 50px;
@@ -1151,7 +1154,7 @@ section {
     .right-fixed{
       position: fixed;
       right: -75px;
-      bottom: 175px;
+      bottom: 135px;
       display: block;
       transform: rotate(90deg);
       color: #2e3956;
@@ -1429,6 +1432,32 @@ section {
 
 
 @media (min-width: 1024px) {
+  #navigation-without-full2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 450;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    li{
+      margin: 10px 0;
+      a{
+        width: 20px;
+        height: 2px;
+        background: #2e3956;
+        display: block;
+      }
+    }
+    .active{
+      a{
+        width: 30px;
+        background: #ffffff;
+      }
+    }
+  }
   main{
     .right-fixed{
       right: -95px;
@@ -1837,6 +1866,18 @@ section {
 }
 
 @media (min-width: 1400px) { 
+  #navigation-without-full2{
+    li{
+      a{
+        width: 30px;
+      }
+    }
+    .active{
+      a{
+        width: 50px;
+      }
+    }
+  }
   section{
     .fp-tableCell{
       vertical-align: top !important;
@@ -1989,6 +2030,14 @@ section {
 } 
 
 @media (min-width: 1600px) { 
+  #navigation-without-full2{
+    right: 25px;
+  }
+  main{
+    .right-fixed{
+      right: -85px;
+    }
+  }
   section{
     .all-banner{
       padding-bottom: 10px;
@@ -2067,6 +2116,9 @@ section {
 }
 
 @media (min-width: 1700px) { 
+  #navigation-without-full2{
+    right: 35px;
+  }
   section{
     .all-banner{
       .img{
@@ -2108,6 +2160,9 @@ section {
 }
 
 @media (min-width: 1800px) { 
+  #navigation-without-full2{
+    right: 40px;
+  }
   section{
     .all-banner{
       padding-top: 20px;
@@ -2124,6 +2179,11 @@ section {
 }
 
 @media (min-width: 1900px) { 
+  main{
+    .right-fixed{
+      right: -70px;
+    }
+  }
   section{
     .all-banner{
       padding-bottom: 20px;
